@@ -467,6 +467,7 @@ section{
 }
 @media (max-width:720px){ .fleet-grid{grid-template-columns:1fr;} }
 .ship-card{
+  display:block;
   background:var(--surface);
   border:1px solid var(--hairline);
   border-radius:18px;
@@ -474,6 +475,9 @@ section{
   transition:border-color .25s ease, box-shadow .25s ease, transform .25s ease;
   position:relative;
   overflow:hidden;
+  text-decoration:none;
+  color:inherit;
+  cursor:pointer;
 }
 .ship-card::before{
   content:"";
@@ -823,7 +827,7 @@ footer.site .manifesto-link:hover{ color:var(--flare); border-color:var(--flare)
       </div>
 
       <div class="fleet-grid">
-        <div class="ship-card reveal">
+        <a href="/products.html#sabaipilot" class="ship-card reveal">
           <div class="row">
             <span class="id">SYS-01</span>
             <span class="status live">Live</span>
@@ -839,8 +843,8 @@ footer.site .manifesto-link:hover{ color:var(--flare); border-color:var(--flare)
           </h3>
           <div class="sector">Independent hospitality · Southeast Asia</div>
           <p class="desc">Centralizes Airbnb, Booking.com, Agoda, Hostelworld and Trip.com reservations, tracks inventory bed by bed, and drafts — never sending on its own — replies to guest messages and reviews.</p>
-        </div>
-        <div class="ship-card reveal">
+        </a>
+        <a href="/products.html#petrapilot" class="ship-card reveal">
           <div class="row">
             <span class="id">SYS-02</span>
             <span class="status live">Live</span>
@@ -856,7 +860,7 @@ footer.site .manifesto-link:hover{ color:var(--flare); border-color:var(--flare)
           </h3>
           <div class="sector">Construction · Charpente, Couverture, Zinguerie · France</div>
           <p class="desc">Builds a devis (quote) the way the trade actually quotes it — materials and labor bundled per work-item, scoped directly with an industry professional. Catalog-driven by default; AI proposes lines and assists the survey, a human confirms every one.</p>
-        </div>
+        </a>
       </div>
     </div>
   </section>
