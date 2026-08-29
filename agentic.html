@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CypherShip Labs — Agentic Engineering</title>
+<title>CypherShip Labs — Studio</title>
 <meta name="description" content="Bespoke automation, built by the same crew and method behind SabaiPilot and PetraPilot — full context of your sector, not a generic tool.">
 <link rel="icon" href="/favicon.ico" sizes="32x32">
 </head>
@@ -542,6 +542,33 @@ section{
   margin:0 0 2.2rem;
 }
 
+/* WHAT WE BUILD */
+.feature-grid{
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:0.9rem;
+  margin-bottom:2.4rem;
+}
+@media (max-width:640px){ .feature-grid{grid-template-columns:1fr;} }
+.feature-item{
+  display:flex;
+  gap:0.8rem;
+  padding:1rem 1.1rem;
+  background:var(--surface);
+  border:1px solid var(--hairline);
+  border-radius:12px;
+}
+.feature-item .mark{
+  flex-shrink:0;
+  width:6px; height:6px;
+  border-radius:50%;
+  background:var(--ion);
+  margin-top:0.55rem;
+  box-shadow:0 0 8px 1px var(--ion-dim);
+}
+.feature-item .txt{ font-size:0.88rem; line-height:1.5; color:var(--text-2); }
+.feature-item .txt strong{ color:var(--text-1); font-weight:500; }
+
 /* PROCESS STEPS */
 .steps-list{ display:flex; flex-direction:column; }
 .step-row{
@@ -744,11 +771,50 @@ footer.site .manifesto-link:hover{ color:var(--flare); border-color:var(--flare)
 <main>
   <section class="hero agentic-hero">
     <div class="wrap">
-      <div class="eyebrow">Agentic Engineering</div>
+      <div class="eyebrow">CypherShip Studio</div>
       <h1>The same method.<br>Applied to <em>your</em> sector.</h1>
-      <p class="sub">SabaiPilot and PetraPilot aren't generic tools bent to fit a sector — they're built around one, end to end. Agentic engineering brings that same approach to your business: full context of how the work actually happens, one stable team, no rotating cast of freelancers.</p>
+      <p class="sub">SabaiPilot and PetraPilot aren't generic tools bent to fit a sector — they're built around one, end to end. CypherShip Studio brings that same approach to your business: full context of how the work actually happens, one stable team, no rotating cast of freelancers.</p>
       <div class="ctas">
         <a href="#contact" class="btn btn-primary">Start a conversation</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="what-we-build">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <div class="eyebrow">What we build</div>
+          <h2>Software, not generic consulting.</h2>
+        </div>
+        <p>Whatever a sector actually needs — always shipped as working software, never a slide deck.</p>
+      </div>
+
+      <div class="feature-grid reveal">
+        <div class="feature-item">
+          <div class="mark"></div>
+          <div class="txt"><strong>Websites</strong> — built to convert, not just to exist.</div>
+        </div>
+        <div class="feature-item">
+          <div class="mark"></div>
+          <div class="txt"><strong>Dashboards</strong> — one real view of a business that currently lives in five tabs.</div>
+        </div>
+        <div class="feature-item">
+          <div class="mark"></div>
+          <div class="txt"><strong>Design</strong> — visual identity that holds up past the pitch deck.</div>
+        </div>
+        <div class="feature-item">
+          <div class="mark"></div>
+          <div class="txt"><strong>Automations</strong> — the manual steps nobody questions anymore, removed.</div>
+        </div>
+        <div class="feature-item">
+          <div class="mark"></div>
+          <div class="txt"><strong>Custom software</strong> — when nothing off-the-shelf actually fits how the work happens.</div>
+        </div>
+        <div class="feature-item">
+          <div class="mark"></div>
+          <div class="txt"><strong>Free first audit</strong> — a no-commitment conversation to find the task most worth building first.</div>
+        </div>
       </div>
     </div>
   </section>
@@ -828,7 +894,7 @@ footer.site .manifesto-link:hover{ color:var(--flare); border-color:var(--flare)
 
   <section id="contact">
     <div class="wrap cta-band">
-      <div class="eyebrow reveal">Agentic Engineering</div>
+      <div class="eyebrow reveal">CypherShip Studio</div>
       <h2 class="reveal">An automation trajectory, designed for your sector.</h2>
       <p class="reveal">A first no-commitment conversation — together we identify the task most worth automating first.</p>
       <div class="reveal">
