@@ -389,6 +389,9 @@ nav.links a:hover::after{transform:scaleX(1);}
 }
 .route-path.draw{animation:draw 2.4s cubic-bezier(.65,0,.35,1) forwards;}
 @keyframes draw{ to{stroke-dashoffset:0;} }
+/* the branch to CircePilot reads as a spur off the main trajectory, not a
+   continuation of it — small repeating dashes instead of the trunk's solid line */
+.route-path.branch{ stroke-dasharray:8 6; stroke-dashoffset:600; }
 .route-node{
   fill:var(--surface-raised);
   stroke:var(--ion);
@@ -769,22 +772,28 @@ footer.site .manifesto-link:hover{ color:var(--flare); border-color:var(--flare)
       </div>
 
       <div class="routemap">
-        <svg viewBox="0 0 1040 220" role="img" aria-label="Route map linking SabaiPilot, PetraPilot and CircePilot">
+        <svg viewBox="0 0 1040 260" role="img" aria-label="Route map: SabaiPilot to PetraPilot to the next sector, with CircePilot branching off separately as a cross-vertical system">
           <path class="route-path" id="routePath" d="M 40 170 C 220 60, 340 220, 520 110 S 820 40, 1000 90" />
+          <path class="route-path branch" id="branchPath" d="M 520 110 C 560 180, 620 220, 820 230" />
           <circle class="route-node" cx="40" cy="170" r="6"/>
           <circle class="route-node" cx="520" cy="110" r="6"/>
           <circle class="route-node flare" cx="1000" cy="90" r="6"/>
+          <circle class="route-node" cx="820" cy="230" r="6"/>
         </svg>
         <div class="route-labels">
-          <div class="route-label-block" style="left:3.8%; top:78%; transform:translateY(0.6rem);">
+          <div class="route-label-block" style="left:3.8%; top:65.4%; transform:translateY(0.6rem);">
             <div class="route-label strong">SabaiPilot</div>
             <div class="route-label">Hospitality · Live</div>
           </div>
-          <div class="route-label-block" style="left:50%; top:50%; transform:translate(-50%,-3.2rem);">
+          <div class="route-label-block" style="left:50%; top:42.3%; transform:translate(-50%,-3.2rem);">
             <div class="route-label strong">PetraPilot</div>
             <div class="route-label">Construction · Live</div>
           </div>
-          <div class="route-label-block right" style="left:96.2%; top:41%; transform:translate(-100%,-3.2rem);">
+          <div class="route-label-block right" style="left:96.2%; top:34.6%; transform:translate(-100%,-3.2rem);">
+            <div class="route-label strong">Next system</div>
+            <div class="route-label">Your sector?</div>
+          </div>
+          <div class="route-label-block right" style="left:78.8%; top:88.5%; transform:translate(-100%,0.6rem);">
             <div class="route-label strong">CircePilot</div>
             <div class="route-label">Cross-vertical · Live</div>
           </div>
@@ -981,9 +990,13 @@ window.__cyphershipInit = true;
   // reappear on top of scrolled content if this script runs more than once
   var boot = document.getElementById('boot');
   var routePath = document.getElementById('routePath');
+  var branchPath = document.getElementById('branchPath');
   function endBoot(){
     if(boot && boot.parentNode) boot.parentNode.removeChild(boot);
     if(routePath) routePath.classList.add('draw');
+    if(branchPath){
+      setTimeout(function(){ branchPath.classList.add('draw'); }, reduceMotion ? 0 : 700);
+    }
   }
   setTimeout(endBoot, reduceMotion ? 50 : 1300);
 
