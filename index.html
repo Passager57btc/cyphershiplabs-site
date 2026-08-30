@@ -390,8 +390,10 @@ nav.links a:hover::after{transform:scaleX(1);}
 .route-path.draw{animation:draw 2.4s cubic-bezier(.65,0,.35,1) forwards;}
 @keyframes draw{ to{stroke-dashoffset:0;} }
 /* the branch to CircePilot reads as a spur off the main trajectory, not a
-   continuation of it — small repeating dashes instead of the trunk's solid line */
-.route-path.branch{ stroke-dasharray:8 6; stroke-dashoffset:600; }
+   continuation of it — small repeating dashes instead of the trunk's solid
+   line, and copper instead of violet since it's the one node that's genuinely
+   different in kind, not just the next stop on the same trajectory */
+.route-path.branch{ stroke:var(--flare); stroke-dasharray:8 6; stroke-dashoffset:600; filter:drop-shadow(0 0 6px var(--flare)); }
 .route-node{
   fill:var(--surface-raised);
   stroke:var(--ion);
@@ -777,8 +779,8 @@ footer.site .manifesto-link:hover{ color:var(--flare); border-color:var(--flare)
           <path class="route-path branch" id="branchPath" d="M 520 110 C 560 180, 620 220, 820 230" />
           <circle class="route-node" cx="40" cy="170" r="6"/>
           <circle class="route-node" cx="520" cy="110" r="6"/>
-          <circle class="route-node flare" cx="1000" cy="90" r="6"/>
-          <circle class="route-node" cx="820" cy="230" r="6"/>
+          <circle class="route-node" cx="1000" cy="90" r="6"/>
+          <circle class="route-node flare" cx="820" cy="230" r="6"/>
         </svg>
         <div class="route-labels">
           <div class="route-label-block" style="left:3.8%; top:65.4%; transform:translateY(0.6rem);">
