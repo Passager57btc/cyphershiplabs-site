@@ -384,55 +384,6 @@ nav.links a:hover::after{transform:scaleX(1);}
 }
 .btn-ghost:hover{border-color:var(--ion); color:var(--ion); transform:translateY(-2px);}
 
-/* ROUTE MAP */
-.routemap{
-  margin-top:4rem;
-  position:relative;
-}
-.routemap svg{width:100%; height:auto; display:block; overflow:visible;}
-.route-path{
-  fill:none;
-  stroke:var(--ion);
-  stroke-width:1.5;
-  vector-effect:non-scaling-stroke;
-  stroke-dasharray:900;
-  stroke-dashoffset:900;
-  filter:drop-shadow(0 0 6px var(--ion));
-}
-.route-path.draw{animation:draw 2.4s cubic-bezier(.65,0,.35,1) forwards;}
-@keyframes draw{ to{stroke-dashoffset:0;} }
-/* hub-and-spoke mark: one copper hub, each spoke fading from the hub's
-   copper to its product's violet — same idea as the favicon mark */
-.route-hub{ fill:var(--flare); filter:drop-shadow(0 0 10px var(--flare)); }
-.route-node{ fill:var(--ion); filter:drop-shadow(0 0 5px var(--ion)); }
-/* the one slot that isn't a live system yet reads as open, not just another
-   spoke — dashed copper instead of a solid violet-fading line */
-.route-path.pending{ stroke:var(--flare); stroke-dasharray:8 6; stroke-dashoffset:600; filter:drop-shadow(0 0 6px var(--flare)); }
-.route-node.pending{ fill:var(--flare); filter:drop-shadow(0 0 5px var(--flare)); }
-
-/* Labels live in an HTML overlay, not as SVG <text> — SVG text set in "px" scales
-   down with the viewBox on narrow screens and becomes unreadable; HTML text stays
-   a real, legible size at any viewport width. */
-.route-labels{ position:absolute; inset:0; pointer-events:none; }
-.route-label-block{ position:absolute; white-space:nowrap; transform:translate(var(--tx,0),var(--ty,0)); }
-.route-label-block.right{ text-align:right; --tx:-100%; }
-.route-label{
-  font-family:var(--font-mono);
-  font-size:0.72rem;
-  color:var(--text-2);
-  letter-spacing:0.06em;
-  line-height:1.5;
-}
-.route-label.strong{ color:var(--text-1); font-weight:500; }
-@media (max-width:640px){
-  .route-label{ font-size:0.62rem; }
-  .route-label:not(.strong){ display:none; }
-  /* near the right edge of the viewport, growing further right clips under
-     the site's overflow-x:hidden — flip these two to grow back toward the
-     hub instead, same as the two on the left already do */
-  .route-label-block.edge{ text-align:right; --tx:-100%; }
-}
-
 /* SECTIONS */
 section{
   padding:5.5rem 0;
@@ -809,51 +760,6 @@ footer.site .manifesto-link:hover{ color:var(--flare); border-color:var(--flare)
         <a href="#flotte" class="btn btn-ghost">See the fleet</a>
       </div>
 
-      <div class="routemap">
-        <svg viewBox="0 0 1040 460" role="img" aria-label="Route map: a central hub with a trajectory radiating out to each of SabaiPilot, PetraPilot and CircePilot, plus one open trajectory reserved for the next sector">
-          <defs>
-            <linearGradient id="routeGradSabai" gradientUnits="userSpaceOnUse" x1="520" y1="230" x2="140" y2="80">
-              <stop offset="0%" stop-color="#E3B168"/>
-              <stop offset="100%" stop-color="#9B8CE0"/>
-            </linearGradient>
-            <linearGradient id="routeGradPetra" gradientUnits="userSpaceOnUse" x1="520" y1="230" x2="960" y2="170">
-              <stop offset="0%" stop-color="#E3B168"/>
-              <stop offset="100%" stop-color="#9B8CE0"/>
-            </linearGradient>
-            <linearGradient id="routeGradCirce" gradientUnits="userSpaceOnUse" x1="520" y1="230" x2="180" y2="400">
-              <stop offset="0%" stop-color="#E3B168"/>
-              <stop offset="100%" stop-color="#9B8CE0"/>
-            </linearGradient>
-          </defs>
-          <path class="route-path" d="M 520 230 L 140 80" style="stroke:url(#routeGradSabai)"/>
-          <path class="route-path" d="M 520 230 L 960 170" style="stroke:url(#routeGradPetra)"/>
-          <path class="route-path pending" d="M 520 230 L 860 400"/>
-          <path class="route-path" d="M 520 230 L 180 400" style="stroke:url(#routeGradCirce)"/>
-          <circle class="route-hub" cx="520" cy="230" r="11"/>
-          <circle class="route-node" cx="140" cy="80" r="6"/>
-          <circle class="route-node" cx="960" cy="170" r="6"/>
-          <circle class="route-node pending" cx="860" cy="400" r="6"/>
-          <circle class="route-node" cx="180" cy="400" r="6"/>
-        </svg>
-        <div class="route-labels">
-          <div class="route-label-block right" style="left:13.5%; top:17.4%; --ty:-3.2rem;">
-            <div class="route-label strong">SabaiPilot</div>
-            <div class="route-label">Hospitality · Live</div>
-          </div>
-          <div class="route-label-block edge" style="left:92.3%; top:37%; --ty:-3.2rem;">
-            <div class="route-label strong">PetraPilot</div>
-            <div class="route-label">Construction · Live</div>
-          </div>
-          <div class="route-label-block edge" style="left:82.7%; top:87%; --ty:0.6rem;">
-            <div class="route-label strong">Next system</div>
-            <div class="route-label">Your sector?</div>
-          </div>
-          <div class="route-label-block right" style="left:17.3%; top:87%; --ty:0.6rem;">
-            <div class="route-label strong">CircePilot</div>
-            <div class="route-label">Cross-vertical · Live</div>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -1044,10 +950,8 @@ window.__cyphershipInit = true;
   // boot sequence — remove from the DOM entirely (not just hide) so it can never
   // reappear on top of scrolled content if this script runs more than once
   var boot = document.getElementById('boot');
-  var routePaths = document.querySelectorAll('.route-path');
   function endBoot(){
     if(boot && boot.parentNode) boot.parentNode.removeChild(boot);
-    routePaths.forEach(function(p){ p.classList.add('draw'); });
   }
   setTimeout(endBoot, reduceMotion ? 50 : 1300);
 
