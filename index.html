@@ -96,7 +96,7 @@
 }
 
 *{box-sizing:border-box;}
-html{scroll-behavior:smooth;}
+html{scroll-behavior:smooth; -webkit-text-size-adjust:100%; text-size-adjust:100%;}
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto;}
   *{animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important;}
@@ -287,6 +287,8 @@ nav.links{display:flex; gap:2rem;}
   header.nav .wrap{ flex-wrap:wrap; gap:0.8rem; padding-top:0.9rem; padding-bottom:0.9rem; }
   nav.links{ gap:1.1rem; width:100%; }
   nav.links a{ font-size:0.66rem; }
+  .hero .sub{ font-size:1.2rem; line-height:1.65; }
+  .dual-tag span{ font-size:0.78rem; padding:0.4rem 0.8rem; }
 }
 nav.links a{
   font-family:var(--font-mono);
@@ -522,85 +524,6 @@ section{
   margin:0;
 }
 
-    .crew-teaser{
-      padding:2.4rem 0 3.6rem;
-      border-top:1px solid var(--hairline);
-    }
-    .crew-teaser-head{margin-bottom:1.6rem; max-width:52ch;}
-    .crew-teaser-head .eyebrow{
-      font-family:var(--font-mono);
-      font-size:0.75rem;
-      letter-spacing:0.16em;
-      text-transform:uppercase;
-      color:var(--ion);
-      margin-bottom:0.6rem;
-      display:flex;
-      align-items:center;
-      gap:0.6rem;
-    }
-    .crew-teaser-head .eyebrow::before{
-      content:"";
-      width:22px; height:1px;
-      background:var(--ion);
-    }
-    .crew-teaser-head p{
-      color:var(--text-2);
-      font-size:0.95rem;
-      line-height:1.55;
-      margin:0;
-    }
-    .crew-teaser-chips{
-      display:flex;
-      flex-wrap:wrap;
-      gap:0.6rem;
-      margin-bottom:1.7rem;
-    }
-    .chip{
-      display:flex;
-      align-items:baseline;
-      gap:0.45rem;
-      padding:0.55rem 0.95rem;
-      border:1px solid var(--hairline);
-      border-radius:999px;
-      background:var(--surface);
-      transition:border-color .2s ease, transform .2s ease;
-    }
-    .chip:hover{border-color:var(--ion); transform:translateY(-2px);}
-    .chip.founder{border-color:var(--flare-dim);}
-    .chip-name{
-      font-family:var(--font-display);
-      font-weight:700;
-      font-size:0.85rem;
-      color:var(--text-1);
-    }
-    .chip-role{
-      font-family:var(--font-mono);
-      font-size:0.62rem;
-      letter-spacing:0.06em;
-      text-transform:uppercase;
-      color:var(--ion);
-    }
-    .chip.founder .chip-role{color:var(--flare);}
-    .crew-teaser-link{
-      font-family:var(--font-mono);
-      font-size:0.78rem;
-      letter-spacing:0.06em;
-      text-transform:uppercase;
-      color:var(--text-1);
-      text-decoration:none;
-      display:inline-flex;
-      align-items:center;
-      gap:0.4rem;
-      border-bottom:1px solid var(--hairline);
-      padding-bottom:0.25rem;
-      transition:color .2s ease, border-color .2s ease;
-    }
-    .crew-teaser-link:hover{color:var(--ion); border-color:var(--ion);}
-    @media (max-width:640px){
-      .crew-teaser-chips{gap:0.45rem;}
-      .chip{padding:0.45rem 0.75rem;}
-      .chip-name{font-size:0.8rem;}
-    }
 /* CREW */
 .crew-list{
   display:flex;
@@ -779,29 +702,6 @@ footer.site .manifesto-link:hover{ color:var(--flare); border-color:var(--flare)
         <a href="#flotte" class="btn btn-ghost">See the fleet</a>
       </div>
 
-    </div>
-  </section>
-
-  <section class="crew-teaser">
-    <div class="wrap">
-      <div class="crew-teaser-head reveal">
-        <div class="eyebrow">The Crew</div>
-        <p>Every system is carried by the same named team, human and AI — no anonymous agents starting over from scratch.</p>
-      </div>
-      <div class="crew-teaser-chips reveal">
-        <div class="chip founder"><span class="chip-name">David</span><span class="chip-role">Founder</span></div>
-        <div class="chip"><span class="chip-name">Noos</span><span class="chip-role">Orchestrator</span></div>
-        <div class="chip"><span class="chip-name">Achille</span><span class="chip-role">Captain</span></div>
-        <div class="chip"><span class="chip-name">Nestor</span><span class="chip-role">Strategist</span></div>
-        <div class="chip"><span class="chip-name">Daedal</span><span class="chip-role">Systems Architect</span></div>
-        <div class="chip"><span class="chip-name">Noah</span><span class="chip-role">Engineer</span></div>
-        <div class="chip"><span class="chip-name">Paris</span><span class="chip-role">Analyst</span></div>
-        <div class="chip"><span class="chip-name">Ulysse</span><span class="chip-role">Navigator</span></div>
-        <div class="chip"><span class="chip-name">Hector</span><span class="chip-role">Archivist</span></div>
-        <div class="chip"><span class="chip-name">Minos</span><span class="chip-role">Administrator</span></div>
-        <div class="chip"><span class="chip-name">Iris</span><span class="chip-role">Herald</span></div>
-      </div>
-      <a href="#equipage" class="crew-teaser-link reveal">Meet the full crew &#8595;</a>
     </div>
   </section>
 

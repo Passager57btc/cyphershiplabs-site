@@ -118,7 +118,7 @@
 }
 
 *{box-sizing:border-box;}
-html{scroll-behavior:smooth;}
+html{scroll-behavior:smooth; -webkit-text-size-adjust:100%; text-size-adjust:100%;}
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto;}
   *{animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important;}
@@ -309,6 +309,8 @@ nav.links{display:flex; gap:2rem;}
   header.nav .wrap{ flex-wrap:wrap; gap:0.8rem; padding-top:0.9rem; padding-bottom:0.9rem; }
   nav.links{ gap:1.1rem; width:100%; }
   nav.links a{ font-size:0.66rem; }
+  .hero .sub{ font-size:1.2rem; line-height:1.65; }
+  .dual-tag span{ font-size:0.78rem; padding:0.4rem 0.8rem; }
 }
 nav.links a{
   font-family:var(--font-mono);
