@@ -246,15 +246,20 @@
   var form = document.getElementById('waitlist-form');
   var msg = document.getElementById('waitlist-msg');
   if (!form || !msg || !window.fetch || !window.FormData) return;
+  var sending = false;
   form.addEventListener('submit', function (e) {
     e.preventDefault();
+    if (sending) return; // une seule requête à la fois (double clic, Entrée + clic, requestSubmit)
+    sending = true;
     var btn = form.querySelector('button[type=submit]');
     btn.disabled = true;
     msg.className = 'form-msg';
     msg.textContent = 'Envoi en cours…';
     // Même appel que le script officiel Brevo : POST + isAjax=1, réponse JSON {success, errors, message}.
     var url = form.action + (form.action.indexOf('?') === -1 ? '?' : '&') + 'isAjax=1';
+    var sent = false;
     fetch(url, { method: 'POST', body: new FormData(form) }).then(function (res) {
+      sent = true; // le serveur a répondu : la requête est partie, on ne la renvoie jamais
       return res.json();
     }).then(function (data) {
       if (data && data.success === true) {
@@ -263,11 +268,19 @@
         msg.textContent = 'Merci ! Vérifiez votre boîte mail : un email de confirmation vient de partir. Cliquez dessus pour valider votre inscription.';
         msg.focus();
       } else {
+        sending = false;
         btn.disabled = false;
         msg.className = 'form-msg err';
         msg.textContent = 'Votre inscription n’a pas été acceptée. Vérifiez votre adresse e-mail et la case de consentement, puis réessayez.';
       }
     }).catch(function () {
+      if (sent) { // réponse reçue mais illisible : pas de second envoi
+        sending = false;
+        btn.disabled = false;
+        msg.className = 'form-msg err';
+        msg.textContent = 'Votre inscription n’a pas été acceptée. Vérifiez votre adresse e-mail et la case de consentement, puis réessayez.';
+        return;
+      }
       // Réseau/CORS (ex. origine non autorisée) ou réponse illisible : envoi classique du formulaire,
       // l’utilisateur voit la page de réponse de Brevo. Aucun faux succès affiché.
       msg.textContent = 'Envoi en cours…';
