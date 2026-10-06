@@ -200,3 +200,19 @@ h1 em,h2 em{color:var(--flare)}
 
 
 .reveal{opacity:1;transform:none}
+
+/* Mobile readability (<=480px): larger small text and tap targets, hierarchy unchanged. */
+@media(max-width:480px){
+.eyebrow,.product-top .eyebrow{font-size:13px;letter-spacing:1.2px}
+.status{font-size:13px}
+.menu-toggle{font-size:15px}
+.footer-main p{font-size:16px;line-height:1.6}
+.footer-links{font-size:16px;gap:6px 22px;flex-wrap:wrap}
+.footer-links a{display:inline-flex;align-items:center;min-height:44px}
+.footer-bottom{font-size:12px;line-height:1.6}
+.card-link{font-size:17px}
+.button,.text-link{font-size:17px}
+.text-link{min-height:44px}
+.product-sector{font-size:17px}
+.product-description{line-height:1.7}
+}

@@ -39,7 +39,7 @@
 .page-products .titling { display:flex; gap:18px; align-items:center; flex-wrap:wrap; }
 .page-products .titling .id { font:13px var(--font-mono); color:var(--quiet); }
 .page-products .product-head h2 { margin:0; }
-.page-products .status { font:12px var(--font-mono); color:var(--ion); letter-spacing:.08em; text-transform:uppercase; border:1px solid var(--line); border-radius:4px; padding:8px 12px; }
+.page-products .status { font-size:13px; }
 .page-products .product-sector { color:var(--ion); font:13px/1.6 var(--font-mono); margin:18px 0 24px; }
 .page-products .product-desc { max-width:70ch; margin:0 0 34px; }
 :is(.page-products,.page-agentic) .feature-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
@@ -89,7 +89,7 @@
 .page-contact .contact-hero h1 { max-width:20ch; margin-inline:auto; }
 .page-contact .contact-hero .sub { max-width:60ch; margin-inline:auto; }
 .page-contact main > .email-block { text-align:center; padding-block:15px 80px; border:0; }
-.page-contact .email-link { display:inline; color:var(--ion); font:500 clamp(32px,3.7vw,50px)/1.35 var(--font-display); letter-spacing:-.035em; text-decoration:underline; text-decoration-color:rgba(95,192,214,.35); text-underline-offset:10px; }
+.page-contact .email-link { display:inline; color:var(--ion); font:500 clamp(26px,3.7vw,50px)/1.35 var(--font-display); letter-spacing:-.035em; text-decoration:underline; text-decoration-color:rgba(95,192,214,.35); text-underline-offset:10px; }
 .page-contact .email-link:hover { text-decoration-color:var(--ion); }
 .page-contact .email-note { margin-top:25px; color:var(--quiet); font:13px/1.65 var(--font-mono); }
 .page-contact .include-list { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:22px; }
@@ -129,7 +129,7 @@
   .page-products .titling { gap:12px; }
   .page-products .product-head h2 { font-size:34px; }
   :is(.page-products,.page-agentic) .feature-grid { grid-template-columns:minmax(0,1fr); }
-  :is(.page-products,.page-agentic) .feature-item { padding:22px; }
+  :is(.page-products,.page-agentic) .feature-item { padding:18px 0; background:none; border:0; border-top:1px solid var(--line); border-radius:0; }
   .page-products .product-foot { align-items:flex-start; }
   .page-products .product-foot .button { width:100%; }
   .page-agentic .step-row { grid-template-columns:34px minmax(0,1fr); gap:16px; }
@@ -139,6 +139,21 @@
   .page-manifesto .principle h2 { font-size:30px; margin-bottom:20px; }
   .page-manifesto blockquote { font-size:24px; padding-left:20px; }
   .page-contact main > .email-block { padding-block:5px 65px; }
-  .page-contact .email-link { font-size:34px; }
+  .page-contact .email-link { font-size:clamp(23px,6.6vw,34px); }
   .page-legal .include-row { gap:14px; grid-template-columns:16px minmax(0,1fr); }
+}
+
+@media(min-width:601px) { .page-agentic .feature-grid > .feature-item:last-child:nth-child(odd) { grid-column:1 / -1; } }
+
+/* Mobile readability (<=480px). */
+@media(max-width:480px) {
+  :is(.subpage,.legal) .num,
+  :is(.subpage,.legal) .step-num { font-size:15px; }
+  .page-products .titling .id { font-size:14px; }
+  .page-products .status-note { font-size:17px; }
+  .page-manifesto .kicker { font-size:14px; }
+  .page-manifesto .signoff,
+  .page-contact .email-note { font-size:15px; }
+  .page-agentic .crew-role,
+  .page-products .product-sector { font-size:14px; }
 }
