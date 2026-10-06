@@ -157,3 +157,63 @@
   .page-agentic .crew-role,
   .page-products .product-sector { font-size:14px; }
 }
+
+/* Kit Équipage waitlist page (standalone, French). */
+.page-kit .kit-hero .sub { max-width:62ch; }
+.page-kit h1 { max-width:22ch; }
+.page-kit .kit-status { margin:30px 0 0; padding:18px 22px; max-width:62ch; border:1px solid var(--line); border-left:2px solid var(--ion); border-radius:8px; background:var(--surface); }
+.page-kit .kit-text { max-width:68ch; }
+.page-kit .kit-text h2 { margin:0 0 28px; }
+.page-kit .kit-text p { margin:0 0 20px; }
+.page-kit .kit-sub { margin:48px 0 18px; }
+.page-kit .kit-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px; }
+.page-kit .kit-card { padding:32px; background:var(--surface); border:1px solid var(--line); border-radius:12px; }
+.page-kit .kit-card .num { margin-bottom:18px; }
+.page-kit .kit-card h3 { font-size:26px; line-height:1.2; }
+.page-kit .kit-card p { margin:0 0 16px; }
+.page-kit .kit-card :is(p,ul):last-child { margin-bottom:0; }
+.page-kit ul { margin:0; padding-left:1.2em; color:var(--muted); font-size:18px; line-height:1.7; }
+.page-kit li { margin-bottom:10px; }
+.page-kit .kit-note { margin:32px 0 0; max-width:68ch; }
+.page-kit .kit-callout { margin-top:32px; padding:32px; border:1px solid rgba(95,192,214,.35); border-radius:12px; background:rgba(95,192,214,.05); }
+.page-kit .kit-callout h3 { font-size:26px; margin-bottom:14px; }
+.page-kit .kit-callout p { margin:0; }
+.page-kit code { font-family:var(--font-mono); font-size:.88em; color:var(--text); overflow-wrap:anywhere; }
+.page-kit .crew-list { list-style:none; padding:0; margin:0 0 40px; max-width:900px; }
+.page-kit .crew-list li { display:grid; grid-template-columns:130px 170px minmax(0,1fr); gap:18px; margin:0; padding:16px 0; border-top:1px solid var(--line); color:var(--muted); }
+.page-kit .crew-list strong { font:500 24px/1.3 var(--font-display); }
+.page-kit .crew-list span { font:13px/1.9 var(--font-mono); color:var(--ion); text-transform:uppercase; letter-spacing:1px; }
+.page-kit .waitlist { max-width:720px; margin-inline:auto; padding:44px; border:1px solid rgba(95,192,214,.35); border-radius:14px; background:linear-gradient(140deg,rgba(16,22,38,.96),rgba(13,13,28,.98)); }
+.page-kit .waitlist h2 { margin:0 0 28px; }
+.page-kit .field-label { display:block; margin-bottom:10px; color:var(--text); font-weight:500; }
+.page-kit .field { display:block; width:100%; min-height:54px; padding:12px 16px; font:inherit; font-size:18px; color:var(--text); background:var(--void); border:1px solid rgba(170,194,219,.4); border-radius:6px; }
+.page-kit .field:focus-visible { outline:2px solid var(--ion); outline-offset:3px; border-color:var(--ion); }
+.page-kit .hp { position:absolute; left:-10000px; width:1px; height:1px; overflow:hidden; }
+.page-kit .consent { display:flex; gap:14px; align-items:flex-start; margin:24px 0; }
+.page-kit .consent input { flex:none; width:28px; height:28px; margin:2px 0 0; accent-color:var(--ion); cursor:pointer; }
+.page-kit .consent label { padding:2px 0; font-size:17px; line-height:1.6; color:var(--muted); cursor:pointer; }
+.page-kit .waitlist .button { width:100%; }
+.page-kit .waitlist .button:disabled { opacity:.6; cursor:wait; transform:none; }
+.page-kit .waitlist p.form-help { margin:20px 0 0; font-size:17px; line-height:1.65; }
+.page-kit .waitlist p.notice { margin:32px 0 0; padding-top:24px; border-top:1px solid var(--line); font-size:15px; line-height:1.7; color:var(--quiet); }
+.page-kit .waitlist p.notice a { color:var(--ion); text-decoration:underline; text-underline-offset:4px; }
+.page-kit .form-msg:empty { display:none; }
+.page-kit .form-msg { padding:18px 22px; border-radius:8px; border:1px solid var(--line); color:var(--text); font-size:18px; line-height:1.6; }
+.page-kit .form-msg.ok { border-color:rgba(95,192,214,.6); background:rgba(95,192,214,.08); }
+.page-kit .form-msg.err { border-color:rgba(227,177,104,.6); background:rgba(227,177,104,.08); }
+.page-kit .faq { max-width:820px; }
+.page-kit .faq-item { padding:26px 0; border-top:1px solid var(--line); }
+.page-kit .faq-item h3 { font-size:24px; line-height:1.3; margin-bottom:12px; }
+.page-kit .faq-item p { margin:0; }
+.page-kit .faq-item a, .page-kit .kit-text a { color:var(--ion); text-decoration:underline; text-underline-offset:4px; }
+@media(max-width:900px) {
+  .page-kit .kit-grid { grid-template-columns:minmax(0,1fr); }
+  .page-kit .crew-list li { grid-template-columns:110px minmax(0,1fr); gap:4px 16px; }
+  .page-kit .crew-list li span { grid-column:2; }
+}
+@media(max-width:600px) {
+  .page-kit .kit-card, .page-kit .kit-callout { padding:24px 20px; }
+  .page-kit .waitlist { padding:26px 18px; }
+  .page-kit .crew-list li { grid-template-columns:minmax(0,1fr); }
+  .page-kit .crew-list li span { grid-column:auto; }
+}
