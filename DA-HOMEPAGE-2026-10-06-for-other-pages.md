@@ -79,3 +79,12 @@ Note : l'accueil lui-même dépasse encore la règle (voir le rapport) ; à corr
 - Contraste : `--muted` sur `--void` et sur `--surface` ≥ 4.5:1 ; focus visible sur nav, boutons, rail.
 - `grep var(--flare)` sur tout le site : seulement les deux titres (+ éventuellement l'état ouvert du menu, à trancher).
 - Paris : revue finale ; Noah : intégration ; un seul commit, une seule publication des 7 pages.
+
+## Correction de David (2026-10-06), prioritaire sur la règle cuivre ci-dessus
+
+Le cuivre n'est **pas** limité à « trajectory » et « next ». David trouvait la première version trop turquoise : le cuivre (#E3B168) apporte une touche de chaleur et de sérénité, et peut être utilisé ailleurs **si c'est cohérent, élégant et systématique** (même rôle partout : boutons, couleurs de police, accents). Proposition de système à appliquer sur les 7 pages :
+- **Cuivre = accent chaleureux** : le mot mis en valeur dans les titres (`h1 em`, `h2 em`, comme « trajectory », « next », « Neither should its tools. »), et quelques petits détails décoratifs (icône de citation, numéros d'étapes), avec parcimonie.
+- **Turquoise = interaction** : liens, boutons, CTA, focus, états actifs (dont le menu ouvert).
+- Un même élément a la même couleur sur toutes les pages. Les anciens mots cuivre des h1 (« field », « same », « your ») restent cuivre s'ils jouent ce rôle d'accent de titre.
+
+Portrait de David sur le site : **`david-profile-v2.png`** (validé par David).
