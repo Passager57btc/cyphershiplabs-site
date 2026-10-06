@@ -1,6 +1,6 @@
-# Kit Équipage — texte de la page (FR) — BROUILLON, non publié
+# Crew Kit — texte de la page (FR) — BROUILLON, non publié
 
-Statut : brouillon Iris, mis à jour 2026-10-06 avec les réponses de David. Nom fixé : « Kit Équipage ». Prix = hypothèse, signalée comme telle. Date = « objectif fin 2026, date à confirmer ». Les points « à valider par Minos » restent ouverts.
+Statut : brouillon Iris, mis à jour 2026-10-06 avec les réponses de David. Nom fixé : « Crew Kit ». Prix = hypothèse, signalée comme telle. Date = « objectif fin 2026, date à confirmer ». Les points « à valider par Minos » restent ouverts.
 
 Règle d'identité (David) : l'équipage n'est jamais dans le kit. Le kit contient des modèles vierges ; nos noms, portraits et mémoire ne servent ici que comme notre histoire.
 
@@ -12,7 +12,7 @@ Règle d'identité (David) : l'équipage n'est jamais dans le kit. Le kit contie
 Arrêtez de réexpliquer votre projet à votre IA à chaque session.
 
 **Sous-titre**
-Le Kit Équipage, c'est la méthode qu'on utilise chez CypherShip Labs pour travailler avec une petite équipe d'agents IA qui ont chacun un rôle, une mémoire et des règles. Des modèles vierges à copier et à nommer vous-même, un guide d'installation, pour Claude Code (et ChatGPT / Codex).
+Le Crew Kit, c'est la méthode qu'on utilise chez CypherShip Labs pour travailler avec une petite équipe d'agents IA qui ont chacun un rôle, une mémoire et des règles. Des modèles vierges à copier et à nommer vous-même, un guide d'installation, pour Claude Code (et ChatGPT / Codex).
 
 **Ligne d'état (sous le sous-titre, bien visible)**
 En préparation. Pas encore à vendre : vous pouvez vous inscrire pour être prévenu(e) quand il sera prêt. Objectif : fin 2026, date à confirmer.
@@ -131,7 +131,7 @@ Bouton : Me prévenir à la sortie
 Vous recevrez d'abord un email de confirmation : cliquez pour valider votre inscription (double opt-in). Ensuite, un seul email quand le kit est prêt. Désinscription en un clic, à tout moment. Pas de spam, pas de revente de votre adresse.
 
 **Mention RGPD (sous le formulaire, petits caractères)**
-CypherShip Labs collecte uniquement votre adresse email, pour une seule finalité : vous prévenir de la sortie du Kit Équipage et vous envoyer, si vous le souhaitez, des nouvelles directement liées à ce kit. Base légale : votre consentement, que vous confirmez en deux temps (envoi du formulaire, puis clic sur l'email de confirmation). Votre adresse n'est ni vendue ni cédée ; elle est traitée pour notre compte par notre sous-traitant Brevo (Sendinblue SAS, Paris, France), avec un hébergement dans l'Union européenne. Durée de conservation : [à valider par Minos]. Vous pouvez vous désinscrire à tout moment via le lien présent dans chaque email, ou nous écrire à [ADRESSE DE CONTACT À CONFIRMER] pour consulter, corriger ou faire supprimer vos données. Vous pouvez aussi saisir la CNIL. Représentant dans l'UE : [à valider par Minos].
+CypherShip Labs collecte uniquement votre adresse email, pour une seule finalité : vous prévenir de la sortie du Crew Kit et vous envoyer, si vous le souhaitez, des nouvelles directement liées à ce kit. Base légale : votre consentement, que vous confirmez en deux temps (envoi du formulaire, puis clic sur l'email de confirmation). Votre adresse n'est ni vendue ni cédée ; elle est traitée pour notre compte par notre sous-traitant Brevo (Sendinblue SAS, Paris, France), avec un hébergement dans l'Union européenne. Durée de conservation : [à valider par Minos]. Vous pouvez vous désinscrire à tout moment via le lien présent dans chaque email, ou nous écrire à [ADRESSE DE CONTACT À CONFIRMER] pour consulter, corriger ou faire supprimer vos données. Vous pouvez aussi saisir la CNIL. Représentant dans l'UE : [à valider par Minos].
 
 (Note pour Minos : à valider avant publication : (1) durée de conservation (ex. jusqu'à la sortie puis 12 mois, à décider) ; (2) représentant dans l'UE, CypherShip Labs, LLC étant une société américaine qui s'adresse à des personnes dans l'UE (art. 27 RGPD) ; (3) adresse de contact. Brevo et l'hébergement UE sont confirmés par David : à vérifier dans la documentation Brevo au moment du paramétrage.)
 

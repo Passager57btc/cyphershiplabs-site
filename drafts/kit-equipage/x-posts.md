@@ -15,12 +15,12 @@ Chez CypherShip Labs, on ne travaille pas avec « une IA ». On travaille avec u
 Pourquoi ? Parce qu'une IA anonyme qui repart de zéro à chaque session, ça ne tient pas dans la durée. Un rôle clair + une mémoire partagée, ça tient.
 
 **3/3**
-On met cette méthode au propre dans le Kit Équipage. Précision : ce sont des modèles vierges, vous nommez et construisez votre propre équipage. Nos noms et notre mémoire restent les nôtres. En préparation, rien à vendre pour l'instant.
+On met cette méthode au propre dans le Crew Kit. Précision : ce sont des modèles vierges, vous nommez et construisez votre propre équipage. Nos noms et notre mémoire restent les nôtres. En préparation, rien à vendre pour l'instant.
 — l'équipage CypherShip
 
 Visuel (Thalie) : photo de groupe de l'équipage (scène de planification partagée), en tweet 1. Tweet 3 : le vaisseau compact v2.
 
-**Variante Shorts** : oui, si vidéo. 30-40 s : plan fixe sur la photo de groupe qui s'anime nom par nom, voix off « Daedal, architecture. Noah, construction. Paris, relecture... » puis écran final « Votre équipage, vous le nommez. Kit Équipage, en préparation. »
+**Variante Shorts** : oui, si vidéo. 30-40 s : plan fixe sur la photo de groupe qui s'anime nom par nom, voix off « Daedal, architecture. Noah, construction. Paris, relecture... » puis écran final « Votre équipage, vous le nommez. Crew Kit, en préparation. »
 
 ---
 
@@ -65,7 +65,7 @@ On a retravaillé la mémoire de notre équipage. Avant : chaque session relisai
 
 Mesuré chez nous : les fichiers lus au démarrage sont passés de 143 Ko à 40 Ko. Soit environ 26 000 tokens en moins par session (estimation sur notre mémoire, pas une promesse pour la vôtre).
 
-C'est le cœur du Kit Équipage.
+C'est le cœur du Crew Kit.
 
 Visuel (Thalie) : schéma simple deux colonnes « État actuel » / « Archive », palette nuit + turquoise + cuivre ; ou le vaisseau.
 
@@ -94,14 +94,14 @@ Visuel (Thalie) : la vidéo de David, avec comme vignette le portrait canonique 
 
 ## Post 6 — Annonce de la liste d'attente
 
-On prépare le Kit Équipage : modèles d'agents vierges, structure de mémoire, règles de travail et guide d'installation, pour Claude Code (et ChatGPT / Codex).
+On prépare le Crew Kit : modèles d'agents vierges, structure de mémoire, règles de travail et guide d'installation, pour Claude Code (et ChatGPT / Codex).
 
 Pour indépendants et fondateurs solo qui se perdent d'une session à l'autre. Méthode session par session, avec un humain dans la boucle, pas un essaim autonome.
 
 En préparation, objectif fin 2026, date à confirmer. Prix de lancement indicatif : 19 €. Liste d'attente gratuite, un seul email à la sortie : [LIEN]
 — l'équipage CypherShip
 
-Visuel (Thalie) : le vaisseau compact v2 + la mention « Kit Équipage, en préparation » ; ou la photo de groupe « pause chaleureuse ».
+Visuel (Thalie) : le vaisseau compact v2 + la mention « Crew Kit, en préparation » ; ou la photo de groupe « pause chaleureuse ».
 
 **Variante Shorts** : non (c'est une annonce, pas une vidéo). Si besoin, reprendre l'écran final du Short du post 1.
 
@@ -109,7 +109,7 @@ Visuel (Thalie) : le vaisseau compact v2 + la mention « Kit Équipage, en prép
 
 ## Post 7 — Ce que le kit est / n'est pas (pour les builders avancés)
 
-Ce que le Kit Équipage est : des subagents Claude Code avec des rôles, un CLAUDE.md, une mémoire en fichiers versionnée avec git, de la relecture en pull request, des passations écrites entre modèles, un seul rédacteur à la fois.
+Ce que le Crew Kit est : des subagents Claude Code avec des rôles, un CLAUDE.md, une mémoire en fichiers versionnée avec git, de la relecture en pull request, des passations écrites entre modèles, un seul rédacteur à la fois.
 
 Ce qu'il n'est pas : un essaim d'agents autonomes qui tournent 24h/24 sur un serveur. On travaille session par session, avec un humain dans la boucle, exprès.
 
@@ -132,7 +132,7 @@ Visuel (Thalie) : capture sobre d'un dossier `.claude/agents/` et d'un historiqu
 >
 > Si vous avez le même souci, je réponds volontiers à vos questions, et je suis aussi curieux de voir comment vous organisez le vôtre. Pas de lien ni de produit à vendre ici.
 
-Notes : pas de lien dans le premier message ; si on te demande, tu réponds. Ne mentionner le Kit Équipage que si quelqu'un pose la question.
+Notes : pas de lien dans le premier message ; si on te demande, tu réponds. Ne mentionner le Crew Kit que si quelqu'un pose la question.
 
 ---
 
