@@ -134,3 +134,34 @@ h1{font-size:58px;line-height:1.02;margin-bottom:25px;max-width:11ch}
 .studio-services p{font-size:18px}
 .crew-card p{font-size:18px}
 }
+
+/* Blueprints: the first kit, presented as a working structure. */
+.blueprints{padding-top:0}
+.blueprint-panel{display:grid;grid-template-columns:1.15fr 1fr;gap:70px;padding:58px 65px;border:1px solid var(--line);border-radius:12px;background:linear-gradient(120deg,rgba(17,27,41,.94),rgba(9,17,29,.92))}
+.blueprint-copy h3{font-size:38px;line-height:1.15;margin:0 0 22px}
+.blueprint-copy>p:not(.eyebrow){max-width:42ch;font-size:17px;line-height:1.75;color:var(--muted)}
+.blueprint-copy .blueprint-status{display:block;font-family:var(--font-mono);font-size:12px;line-height:1.6;margin:25px 0}
+.blueprint-copy .blueprint-language{font-size:13px;color:var(--quiet);margin:14px 0 0}
+.blueprint-outline{align-self:center;padding:28px;border:1px solid rgba(95,192,214,.22);border-radius:7px;background:linear-gradient(rgba(95,192,214,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(95,192,214,.035) 1px,transparent 1px),rgba(7,15,26,.8);background-size:24px 24px}
+.blueprint-outline>.eyebrow{font-size:10px;margin-bottom:20px}
+.blueprint-outline ol{list-style:none;margin:0;padding:0}
+.blueprint-outline li{display:flex;gap:18px;padding:15px 0;border-bottom:1px solid var(--line)}
+.blueprint-outline li:last-child{border-bottom:0}
+.blueprint-number{font-family:var(--font-mono);font-size:11px;color:var(--flare);padding-top:4px}
+.blueprint-outline h4{font-family:var(--font-display);font-weight:500;font-size:22px;margin:0 0 5px}
+.blueprint-outline li p{font-size:14px;line-height:1.6;color:var(--muted);margin:0}
+.blueprint-ownership{font-family:var(--font-mono);font-size:10px;color:var(--quiet);line-height:1.7;margin:20px 0 0}
+@media(max-width:1100px){.blueprint-panel{gap:40px;padding:45px}}
+@media(max-width:800px){.blueprint-panel{grid-template-columns:1fr;gap:32px;padding:32px}.blueprint-copy h3{font-size:36px}.blueprint-copy>p:not(.eyebrow){font-size:18px}.blueprint-copy .blueprint-status{font-size:13px}.blueprint-copy .blueprint-language{font-size:15px}.blueprint-outline li p{font-size:17px}.blueprint-outline>.eyebrow{font-size:12px}.blueprint-ownership{font-size:12px}}
+@media(max-width:430px){.blueprint-panel{padding:25px 22px}.blueprint-outline{padding:22px 18px}.blueprint-copy h3{font-size:32px}}
+
+.blueprint-next-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:22px}
+.blueprint-next{padding:36px 40px;border:1px solid var(--line);border-radius:10px;background:rgba(10,16,28,.86)}
+.blueprint-next h3{font-size:32px;line-height:1.15;margin:0 0 20px}
+.blueprint-next h3 em{color:var(--flare)}
+.blueprint-next>p:not(.eyebrow){font-size:17px;color:var(--muted);line-height:1.75;max-width:45ch}
+.blueprint-next .blueprint-next-status{font-family:var(--font-mono);font-size:12px;color:var(--quiet);margin:25px 0 0}
+@media(max-width:800px){.blueprint-next-grid{grid-template-columns:1fr}.blueprint-next{padding:32px}.blueprint-next>p:not(.eyebrow){font-size:18px}.blueprint-next .blueprint-next-status{font-size:13px}}
+@media(max-width:430px){.blueprint-next{padding:25px 22px}.blueprint-next h3{font-size:30px}}
+
+.blueprint-status .signal{margin-right:9px;vertical-align:middle}
