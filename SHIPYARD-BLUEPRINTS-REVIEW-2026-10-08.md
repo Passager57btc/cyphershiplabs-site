@@ -34,3 +34,7 @@ Primary seller examples consulted by Nestor (displayed prices, not evidence of s
 - [Claude Code Workflow Pack](https://foxck.gumroad.com/l/claude-code-workflow-pack): price-you-choose alternative.
 
 A free waitlist measures interest, not purchase intent. No pricing publication beyond removing the rejected hypothesis.
+
+## Final publication authorization
+
+David explicitly approved publication: « Génial, on peut tout pousser et valider. Je suis très très satisfait. » Paris’s technical preview review found no blockers. The final 320px capture and desktop HQ/Robot capture were completed by Noos afterward, with no code change beyond the already reviewed status wrapping adjustment. No new price or waitlist approved or created.
