@@ -1,0 +1,106 @@
+[
+  {
+    "name": "achille",
+    "source": "/home/passager57/projects/cyphership-character/avatars/official-v1/achille-profile-v1.png",
+    "source_sha256": "664b848d12a8a5452f3e92dcf4da89de784a82776bf886421512cd04dc3051ec",
+    "output": "assets/crew/avatars-official-v1/achille.webp",
+    "output_sha256": "fb997c7c26edcaacef9bb3593a6614623da52ef1c75b97d6621e4a6963b3857f",
+    "size_bytes": 45428
+  },
+  {
+    "name": "daedal",
+    "source": "/home/passager57/projects/cyphership-character/avatars/official-v1/daedal-profile-v1.png",
+    "source_sha256": "5fa4f6278aa3e528fe0dbb8e4181201c2a1cef1cdca106af1cf9cc80c6bbb97b",
+    "output": "assets/crew/avatars-official-v1/daedal.webp",
+    "output_sha256": "805e3ee5d064b756ecb8dbce04a7d9887a9024dcf20227b77ca6c8d0ca01dfca",
+    "size_bytes": 42056
+  },
+  {
+    "name": "diomed",
+    "source": "/home/passager57/projects/cyphership-character/avatars/official-v1/diomed-profile-v1.png",
+    "source_sha256": "d62fa471771a39464b1eea16a344f19c8acb57f4e57cced575ed192f15f40ac0",
+    "output": "assets/crew/avatars-official-v1/diomed.webp",
+    "output_sha256": "57c636e4f5ac206fb098067eda67319ef339a9b6ad3bb843e9616446fa8992d8",
+    "size_bytes": 53520
+  },
+  {
+    "name": "hector",
+    "source": "/home/passager57/projects/cyphership-character/avatars/official-v1/hector-profile-v1.png",
+    "source_sha256": "a40f0493805d1277a73d5a84fcd64fe8262ac9323997d26ce1ce62b4c527d257",
+    "output": "assets/crew/avatars-official-v1/hector.webp",
+    "output_sha256": "046022b1162d1bf6e115a8200841869bafa6673a6c07a817119d256639b62e23",
+    "size_bytes": 70740
+  },
+  {
+    "name": "iris",
+    "source": "/home/passager57/projects/cyphership-character/avatars/official-v1/iris-profile-v1.png",
+    "source_sha256": "70720aa3e61169088470c818cc9fb10bd69478915071d0813324665e81908540",
+    "output": "assets/crew/avatars-official-v1/iris.webp",
+    "output_sha256": "31346dc915c69f5e7e8b5352cecbb433c253199065223d4c528eafa7afcf1bd4",
+    "size_bytes": 46376
+  },
+  {
+    "name": "maia",
+    "source": "/home/passager57/projects/cyphership-character/avatars/official-v1/maia-profile-v1.png",
+    "source_sha256": "6b46b68c1fdc6f027e748f75f11b3e8e90111027e5f788b1e2b290890764fead",
+    "output": "assets/crew/avatars-official-v1/maia.webp",
+    "output_sha256": "87350ceb1d20ab5786670ab49629605e9d3ed4ee28eedd32ac98ce4a5b367b2b",
+    "size_bytes": 46798
+  },
+  {
+    "name": "minos",
+    "source": "/home/passager57/projects/cyphership-character/avatars/official-v1/minos-profile-v1.png",
+    "source_sha256": "991a29621f338bee13f48130c27d0feeda2c73585304a23d621438a399adedcd",
+    "output": "assets/crew/avatars-official-v1/minos.webp",
+    "output_sha256": "37472b766076a9de4771d82e0c492f8034dbe978900bdbce14b1d9f809d4056d",
+    "size_bytes": 52550
+  },
+  {
+    "name": "nestor",
+    "source": "/home/passager57/projects/cyphership-character/avatars/official-v1/nestor-profile-v1.png",
+    "source_sha256": "c3aa9ea881b3884c16d652a8f6833d74b8580bccfaaa14d871f6c37d9d298607",
+    "output": "assets/crew/avatars-official-v1/nestor.webp",
+    "output_sha256": "a18b188f150c1496599bfc5ec4c89f5e2fea4e540d17a3b6647dc52d2fe7d14a",
+    "size_bytes": 49546
+  },
+  {
+    "name": "noah",
+    "source": "/home/passager57/projects/cyphership-character/avatars/official-v1/noah-profile-v1.png",
+    "source_sha256": "32f5d1b0625cab224a64f3923596d7891e890865f112af080576022dc98e8ed6",
+    "output": "assets/crew/avatars-official-v1/noah.webp",
+    "output_sha256": "82397f01d8c9737f26a606504f63d0199de3acc3694fdaf2426d518f0dc734c8",
+    "size_bytes": 45490
+  },
+  {
+    "name": "noos",
+    "source": "/home/passager57/projects/cyphership-character/avatars/official-v1/noos-profile-v1.png",
+    "source_sha256": "490f5f9497e37d0d760f39c7fe76467302dc0c2cdb9890d8af0b30150849ed59",
+    "output": "assets/crew/avatars-official-v1/noos.webp",
+    "output_sha256": "159e07f2f4620528f288fe136803672a3c3c106ed6b8331bd6011de6f31a9dff",
+    "size_bytes": 45628
+  },
+  {
+    "name": "paris",
+    "source": "/home/passager57/projects/cyphership-character/avatars/official-v1/paris-profile-v1.png",
+    "source_sha256": "cdea687baaeb8608464552df17dd099731c199c4f171e04a560f716832cb475c",
+    "output": "assets/crew/avatars-official-v1/paris.webp",
+    "output_sha256": "187b1364d07668e4b265d8d523adfae74d4dc631168960b00e87d64a2b30109a",
+    "size_bytes": 43354
+  },
+  {
+    "name": "thalie",
+    "source": "/home/passager57/projects/cyphership-character/avatars/official-v1/thalie-profile-v1.png",
+    "source_sha256": "714ea3b07f6866334353da0a75ed7e9671a6682fd2ea994ac409c56110938edd",
+    "output": "assets/crew/avatars-official-v1/thalie.webp",
+    "output_sha256": "2655e6a9992f6d9fedb53357778649f23111fad14e7e2b76368d46b1ac7e0561",
+    "size_bytes": 41614
+  },
+  {
+    "name": "ulysse",
+    "source": "/home/passager57/projects/cyphership-character/avatars/official-v1/ulysse-profile-v1.png",
+    "source_sha256": "62eaf90fe925821e64cc7075a2da78b2da0d9f133e9711b3ec5bbe4f9b147c4e",
+    "output": "assets/crew/avatars-official-v1/ulysse.webp",
+    "output_sha256": "8451a2a7da826f2fda8f9b4fd42e9c2e463dc05d264f5224f71b3c766034c7dc",
+    "size_bytes": 48848
+  }
+]
