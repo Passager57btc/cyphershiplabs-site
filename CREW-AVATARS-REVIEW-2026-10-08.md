@@ -15,6 +15,10 @@ Thirteen WebP assets at 660 × 660, quality 88, total 631,948 bytes. Full square
 - Screenshots saved in `review/crew-avatars-2026-10-08/`; viewport override reset afterward.
 - `git diff --check` passes.
 
-No independent Paris or Thalie review was invoked in this turn; no such GO is claimed. Publication requires the standing crew review and David’s final approval. Current change covers avatars and two planned-role cards, not the broader five-branch site rewrite.
+Initial preparation had no independent crew review. Paris was subsequently invoked explicitly by David and gave GO for commit `748505c`: hashes, decoding, framing, saved desktop/mobile screenshots, planned-role wording and public data exposure reviewed; no blockers. Paris did not replay interactive browser navigation. David validated the preview at 100% and authorized review followed by publication. No separate Thalie GO is claimed. Current change covers avatars and two planned-role cards, not the broader five-branch site rewrite.
 
 Local preview: http://127.0.0.1:8766/#equipage (server detached with setsid, bound to loopback). The first foreground preview terminated during checking; server restarted and the final assets reverified in Chrome.
+
+## Publication approval
+
+David: « C’est parti pour la relecture et en avant. » Paris: GO, no blockers. Live verification follows the Pages build.
