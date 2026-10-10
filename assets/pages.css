@@ -217,3 +217,13 @@
   .page-kit .crew-list li { grid-template-columns:minmax(0,1fr); }
   .page-kit .crew-list li span { grid-column:auto; }
 }
+
+/* Language switch (header nav) and cross-language hint (kit hero). */
+.lang-switch { color:var(--quiet); white-space:nowrap; }
+.lang-switch a { color:var(--muted); }
+.lang-switch [aria-current="true"] { color:var(--text); }
+.site-navigation .lang-switch a { padding:0; }
+.page-kit .lang-hint { margin:0 0 18px; font-size:14px; }
+.page-kit .lang-hint a { color:var(--muted); }
+.page-kit .lang-hint a:hover { color:var(--ion); }
+@media (max-width:800px) { .site-navigation .lang-switch { padding:13px 0; } }
