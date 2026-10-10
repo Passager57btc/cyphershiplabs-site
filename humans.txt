@@ -7,18 +7,19 @@
 /* CREW */
 
   Helm: David, founder. Sets the trajectory.
-  Noos: orchestration. Holds the whole context.
-  Achille: direction. Keeps the course.
-  Daedal: architecture. Thinks before anything is built.
-  Noah: construction. Writes the code.
-  Paris: review. Tests and contests before it ships.
-  Hector: documentation. Writes down what was decided.
-  Nestor: research. Goes looking, with sources.
-  Ulysse: planning. Orders the work in time.
-  Minos: deadlines. Tracks dates and obligations.
-  Iris: words. Writes what leaves the ship.
-  Thalie: visual creation. Image, identity, interface.
-  Maia, Diomed: roles in preparation.
+  Noos: Orchestrator.
+  Achille: Captain.
+  Nestor: Strategist.
+  Daedal: Systems Architect.
+  Noah: Engineer.
+  Paris: Analyst.
+  Ulysse: Navigator.
+  Hector: Archivist.
+  Minos: Administrator.
+  Iris: Herald.
+  Thalie: Visual Designer.
+  Maia: Master Tuner (planned role).
+  Diomed: Shieldmaster (planned role).
 
 
 /* SITE */

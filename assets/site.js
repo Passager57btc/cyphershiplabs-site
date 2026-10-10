@@ -50,15 +50,19 @@
 
   function show() {
     if (!toast) {
+      // The live region is inserted empty first; its text is set a moment
+      // later so screen readers announce it.
       toast = document.createElement('div');
       toast.className = 'transmission';
       toast.setAttribute('role', 'status');
       toast.setAttribute('aria-live', 'polite');
       toast.innerHTML = '<span class="transmission-eyebrow">Transmission</span><p></p><span class="transmission-sign">— CypherShip</span>';
-      toast.querySelector('p').textContent = message;
       toast.addEventListener('click', hide);
       document.body.appendChild(toast);
     }
+    const line = toast.querySelector('p');
+    line.textContent = '';
+    setTimeout(() => { line.textContent = message; }, 120);
     void toast.offsetWidth; // commit the hidden state first so the fade-in runs
     toast.classList.add('is-on');
     clearTimeout(timer);
