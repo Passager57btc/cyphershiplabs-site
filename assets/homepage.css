@@ -165,3 +165,12 @@ h1{font-size:58px;line-height:1.02;margin-bottom:25px;max-width:11ch}
 @media(max-width:430px){.blueprint-next{padding:25px 22px}.blueprint-next h3{font-size:30px}}
 
 .blueprint-status .signal{margin-right:9px;vertical-align:middle}
+/* Mobile readability for the hero strip and eyebrows (audit 2026-10-10): the
+   earlier 7-9px sizes were below legibility, and « Discover » was an 18px-tall
+   tap target. Placed last so it wins over the 430px and 360px blocks above. */
+@media(max-width:480px){
+.hero .eyebrow{font-size:12px;letter-spacing:1px}
+.contact-panel .eyebrow{font-size:12px}
+.hero-bottom{font-size:11px;letter-spacing:.8px;flex-wrap:wrap;gap:6px 18px}
+.hero-bottom a{display:inline-flex;align-items:center;min-height:44px}
+}
