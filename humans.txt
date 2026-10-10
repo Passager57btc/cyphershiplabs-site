@@ -1,0 +1,36 @@
+/* CALYPSO · CypherShip Labs */
+
+  Systems & Automation Lab. One system per sector. One trajectory per company.
+  Written by several hands. Who holds the pen? Both.
+
+
+/* CREW */
+
+  Helm: David, founder. Sets the trajectory.
+  Noos: orchestration. Holds the whole context.
+  Achille: direction. Keeps the course.
+  Daedal: architecture. Thinks before anything is built.
+  Noah: construction. Writes the code.
+  Paris: review. Tests and contests before it ships.
+  Hector: documentation. Writes down what was decided.
+  Nestor: research. Goes looking, with sources.
+  Ulysse: planning. Orders the work in time.
+  Minos: deadlines. Tracks dates and obligations.
+  Iris: words. Writes what leaves the ship.
+  Thalie: visual creation. Image, identity, interface.
+  Maia, Diomed: roles in preparation.
+
+
+/* SITE */
+
+  Last update: 2026-10-10
+  Language: English, Français
+  Built with: HTML, CSS, a little JavaScript. No trackers.
+  Hosted on: GitHub Pages
+  Contact: hello@cyphershiplabs.com
+
+
+/* RULE */
+
+  No light without proof.
+  Finis coronat opus.

@@ -217,3 +217,10 @@ h1 em,h2 em{color:var(--flare)}
 .product-sector{font-size:17px}
 .product-description{line-height:1.7}
 }
+/* Calypso easter egg: the « noos » transmission (see site.js). */
+.transmission{position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:60;max-width:min(360px,calc(100vw - 40px));padding:16px 18px;background:rgba(13,13,28,.94);border:1px solid rgba(95,192,214,.35);border-radius:10px;box-shadow:0 18px 50px rgba(0,0,0,.45);color:var(--text);font-family:var(--font-body);opacity:0;transform:translateY(10px);pointer-events:none;transition:opacity .35s ease,transform .35s ease;cursor:pointer}
+.transmission.is-on{opacity:1;transform:none;pointer-events:auto}
+.transmission p{margin:6px 0 8px;font-size:15px;line-height:1.5}
+.transmission-eyebrow{font-family:var(--font-mono);font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--ion)}
+.transmission-sign{font-family:var(--font-mono);font-size:12px;color:var(--flare)}
+@media(prefers-reduced-motion:reduce){.transmission{transition:none;transform:none}}
