@@ -1,7 +1,7 @@
 /* CALYPSO · CypherShip Labs */
 
   Systems & Automation Lab. One system per sector. One trajectory per company.
-  Written by several hands. Who holds the pen? Both.
+  One orchestrator. Ten specialists. Who's piloting? Both.
 
 
 /* CREW */
