@@ -28,7 +28,7 @@
   Language: English, Français
   Built with: HTML, CSS, a little JavaScript. No trackers.
   Hosted on: GitHub Pages
-  Contact: hello@cyphershiplabs.com
+  Contact: contact@cyphershiplabs.com
 
 
 /* RULE */
