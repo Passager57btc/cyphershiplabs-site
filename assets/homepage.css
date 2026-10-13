@@ -136,7 +136,7 @@ h1{font-size:58px;line-height:1.02;margin-bottom:25px;max-width:11ch}
 }
 
 /* Blueprints: the first kit, presented as a working structure. */
-.blueprints{padding-top:0}
+.blueprints{padding-top:0;padding-bottom:56px}
 .blueprint-panel{display:grid;grid-template-columns:1.15fr 1fr;gap:70px;padding:58px 65px;border:1px solid var(--line);border-radius:12px;background:linear-gradient(120deg,rgba(17,27,41,.94),rgba(9,17,29,.92))}
 .blueprint-copy h3{font-size:38px;line-height:1.15;margin:0 0 22px}
 .blueprint-copy>p:not(.eyebrow){max-width:42ch;font-size:17px;line-height:1.75;color:var(--muted)}
@@ -163,6 +163,15 @@ h1{font-size:58px;line-height:1.02;margin-bottom:25px;max-width:11ch}
 .blueprint-next .blueprint-next-status{font-family:var(--font-mono);font-size:12px;color:var(--quiet);margin:25px 0 0}
 @media(max-width:800px){.blueprint-next-grid{grid-template-columns:1fr}.blueprint-next{padding:32px}.blueprint-next>p:not(.eyebrow){font-size:18px}.blueprint-next .blueprint-next-status{font-size:13px}}
 @media(max-width:430px){.blueprint-next{padding:25px 22px}.blueprint-next h3{font-size:30px}}
+
+.future-directions{padding-top:0;padding-bottom:115px}
+.future-directions-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.future-direction-card{min-width:0;padding:36px 40px;border:1px solid var(--line);border-top:2px solid rgba(95,192,214,.25);border-radius:10px;background:rgba(10,16,28,.94)}
+.future-direction-card .future-direction-status{display:inline-block;font-family:var(--font-mono);font-size:13px;line-height:1.5;letter-spacing:.02em;color:var(--text);padding:5px 9px;margin:0 0 18px;border:1px solid rgba(95,192,214,.2);border-radius:5px;background:rgba(95,192,214,.08)}
+.future-direction-card h2{font-size:32px;line-height:1.15;color:var(--text);margin:0 0 16px}
+.future-direction-card>p:last-child{max-width:45ch;font-size:17px;line-height:1.75;color:var(--muted);margin:0}
+@media(max-width:800px){.blueprints{padding-bottom:36px}.future-directions{padding-bottom:75px}.future-directions-grid{grid-template-columns:1fr;gap:18px}.future-direction-card{padding:32px}.future-direction-card .future-direction-status{font-size:14px}.future-direction-card>p:last-child{font-size:18px}}
+@media(max-width:430px){.future-direction-card{padding:25px 22px}.future-direction-card h2{font-size:30px}}
 
 .blueprint-status .signal{margin-right:9px;vertical-align:middle}
 /* Mobile readability for the hero strip and eyebrows (audit 2026-10-10): the
