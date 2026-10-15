@@ -13,6 +13,7 @@
 .hero .eyebrow{display:flex;align-items:center;gap:12px;font-size:11px;letter-spacing:1.2px;white-space:nowrap}
 h1{font-size:clamp(52px,5.1vw,74px);margin:0 0 30px;max-width:11ch}
 .hero h1{max-width:16ch}
+.hero h1 .hero-agentic{color:var(--ion)}
 .hero-intro{font-family:var(--font-display);font-size:23px;line-height:1.45;margin:0 0 15px;max-width:35ch}
 .hero-detail{font-size:16px;color:var(--muted);line-height:1.75;max-width:47ch;margin:0 0 30px}
 .actions{display:flex;align-items:center;gap:28px;flex-wrap:wrap}
