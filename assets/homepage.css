@@ -184,3 +184,4 @@ h1{font-size:58px;line-height:1.02;margin-bottom:25px;max-width:11ch}
 .hero-bottom{font-size:11px;letter-spacing:.8px;flex-wrap:wrap;gap:6px 18px}
 .hero-bottom a{display:inline-flex;align-items:center;min-height:44px}
 }
+.crew-controls button{touch-action:none;user-select:none;-webkit-user-select:none}
