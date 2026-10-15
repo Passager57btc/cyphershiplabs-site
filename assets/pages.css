@@ -25,6 +25,7 @@
 /* About: generous long-form introduction, then three principles. */
 .page-about .story { max-width:65ch; }
 .page-about .story p { margin:0; }
+.page-about .story p + p { margin-top:22px; }
 .page-about .mission-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:22px; margin-bottom:30px; }
 .page-about .mission-card { padding:32px; background:var(--surface); border:1px solid var(--line); border-radius:12px; }
 .page-about .mission-card .num { margin-bottom:26px; }
