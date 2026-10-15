@@ -98,6 +98,26 @@
 .page-contact .include-row .mark { font:16px var(--font-mono); color:var(--flare); margin-bottom:24px; }
 .page-contact .include-row p { margin:0; }
 
+/* Let’s Talk: an open invitation, with optional prompts and a direct email link. */
+.page-contact main > .contact-hero { padding-block:65px 48px; }
+.page-contact .contact-invitation { max-width:1040px; margin-inline:auto; padding:48px 42px; border:1px solid var(--line); border-radius:14px; background:linear-gradient(135deg,rgba(18,29,44,.94),rgba(13,18,31,.9)); }
+.page-contact .contact-invitation .eyebrow { margin:0 0 22px; color:var(--ion); font:12px/1.7 var(--font-mono); letter-spacing:1.2px; text-transform:uppercase; }
+.page-contact .contact-invitation h2 { margin:0 0 22px; }
+.page-contact .contact-invitation .invitation-copy { max-width:58ch; margin:0 auto 30px; }
+.page-contact .contact-invitation .email-link { font-size:clamp(26px,3.2vw,43px); overflow-wrap:anywhere; }
+.page-contact .contact-invitation .email-note { margin:25px 0 0; font:14px/1.7 var(--font-mono); color:var(--quiet); }
+.page-contact .include-row .mark { font-size:12px; line-height:1.7; letter-spacing:.6px; }
+.page-contact .include-row h3 { font-size:27px; line-height:1.2; margin:0 0 18px; }
+.page-contact .contact-paths { margin-top:42px; padding-top:28px; border-top:1px solid var(--line); }
+.page-contact .contact-paths p { margin:0 0 14px; }
+.page-contact .contact-path-links { display:flex; flex-wrap:wrap; gap:12px 32px; }
+.page-contact .contact-path-links a { display:inline-flex; align-items:center; gap:8px; min-height:44px; color:var(--ion); font-size:16px; }
+@media(max-width:600px) {
+  .page-contact .contact-invitation { padding:32px 20px; }
+  .page-contact .contact-invitation .email-link { font-size:clamp(24px,6vw,32px); }
+  .page-contact .contact-path-links { flex-direction:column; align-items:flex-start; gap:6px; }
+}
+
 /* Legal has no sky. Preserve the full legal document in one readable column. */
 .page-legal main > .hero { padding-bottom:60px; }
 .page-legal .contact-hero h1 { max-width:none; }
