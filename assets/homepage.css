@@ -35,7 +35,7 @@ h1{font-size:clamp(52px,5.1vw,74px);margin:0 0 30px;max-width:11ch}
 .crew-controls button{width:43px;height:43px;border:1px solid var(--line);border-radius:50%;color:var(--text);background:rgba(13,20,33,.7);line-height:1}
 .crew-controls button:hover{border-color:var(--ion);color:var(--ion)}
 .crew-context{font-size:13px;color:var(--quiet);margin:-17px 0 22px}
-.crew-rail{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:#364F61 transparent;list-style:none;margin:0;padding:0 0 22px;overscroll-behavior-x:contain}
+.crew-rail{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:none;scrollbar-width:thin;scrollbar-color:#364F61 transparent;list-style:none;margin:0;padding:0 0 22px;overscroll-behavior-x:contain}
 .crew-card{flex:0 0 220px;scroll-snap-align:start;border:1px solid var(--line);border-radius:9px;overflow:hidden;background:rgba(10,16,28,.9)}
 .crew-card img{width:100%;height:200px;object-fit:cover;object-position:center 25%;border-bottom:1px solid var(--line)}
 .crew-copy{padding:18px}

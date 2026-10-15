@@ -4,7 +4,7 @@
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   const buttons = [...document.querySelectorAll('[data-crew-direction]')];
   const holdThreshold = 250;
-  const continuousSpeed = 190;
+  const continuousSpeed = 840;
   const reducedMotionStepDelay = 720; // Discrete, user-held steps avoid a long smooth tween.
   let activePress = null;
   let suppressedClick = null;
@@ -20,16 +20,6 @@
     return Math.max(0, Math.min(value, rail.scrollWidth - rail.clientWidth));
   }
 
-  function nearestCardPosition() {
-    const railRect = rail.getBoundingClientRect();
-    const left = railRect.left + (rail.clientLeft || 0);
-    const cards = [...rail.querySelectorAll('.crew-card')];
-    if (!cards.length) return clampScroll(rail.scrollLeft);
-    const positions = cards.map(card => clampScroll(rail.scrollLeft + card.getBoundingClientRect().left - left));
-    return positions.reduce((nearest, position) => (
-      Math.abs(position - rail.scrollLeft) < Math.abs(nearest - rail.scrollLeft) ? position : nearest
-    ), positions[0]);
-  }
 
   function stopAnimation(press) {
     if (press.frame !== null) {
@@ -45,8 +35,6 @@
     window.clearTimeout(press.timer);
     stopAnimation(press);
     if (press.held) {
-      rail.style.scrollSnapType = 'none';
-      rail.scrollLeft = nearestCardPosition();
       rail.style.scrollSnapType = press.previousSnap;
       rail.style.scrollBehavior = press.previousScrollBehavior;
       if (reason === 'pointerup') {

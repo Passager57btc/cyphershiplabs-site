@@ -5,6 +5,7 @@ const path = require('node:path');
 const test = require('node:test');
 
 const source = fs.readFileSync(path.join(__dirname, '../assets/homepage.js'), 'utf8');
+const styles = fs.readFileSync(path.join(__dirname, '../assets/homepage.css'), 'utf8');
 
 function createHarness(reducedMotion = false) {
   let now = 0;
@@ -138,43 +139,48 @@ test('a brief pointer click advances one card once', () => {
   assert.equal(h.scrollCalls[0].behavior, 'smooth');
 });
 
-test('a held press scrolls, stops on release, restores snap and suppresses its click', () => {
+test('a held press stops at the exact fractional position and suppresses its click', () => {
   const h = createHarness();
   h.pointerDown(12);
   h.advance(250);
   h.frame(16);
-  for (let i = 0; i < 14; i++) h.frame(50);
-  assert.ok(h.rail.scrollLeft > 120);
-  h.dispatchWindow('pointerup', { pointerId: 12, timeStamp: 966 });
-  assert.equal(h.rail.scrollLeft, 240, 'held scroll settles on the nearest card');
+  for (let i = 0; i < 3; i++) h.frame(50);
+  const beforeRelease = h.rail.scrollLeft;
+  assert.ok(beforeRelease > 0);
+  assert.notEqual(beforeRelease % 240, 0, 'test position is between card snap points');
+  h.dispatchWindow('pointerup', { pointerId: 12, timeStamp: 416 });
+  assert.equal(h.rail.scrollLeft, beforeRelease, 'release preserves scrollLeft exactly');
   assert.equal(h.rail.style.scrollSnapType, '');
   assert.equal(h.rail.style.scrollBehavior, '');
   assert.equal(h.frames.size, 0);
+  h.frame(100);
+  assert.equal(h.rail.scrollLeft, beforeRelease, 'no later frame moves the rail');
   assert.equal(h.pointerClick(12), true);
   assert.equal(h.scrollCalls.length, 0);
+  assert.match(styles, /\.crew-rail\{[^}]*scroll-snap-type:none;/, 'the rail keeps snap disabled after release');
 });
 
-test('pointer cancel, blur and hidden page stop a held press', () => {
-  for (const stop of [
+test('pointer cancel, blur and hidden page preserve the current position and stop animation', () => {
+  const stops = [
     h => h.dispatchWindow('pointercancel', { pointerId: 13 }),
-    h => h.dispatchWindow('blur')
-  ]) {
+    h => h.dispatchWindow('blur'),
+    h => { h.document.hidden = true; h.dispatchDocument('visibilitychange'); }
+  ];
+  for (const stop of stops) {
     const h = createHarness();
     h.pointerDown(13);
     h.advance(250);
     h.frame(16);
+    h.frame(50);
+    h.frame(50);
+    const beforeStop = h.rail.scrollLeft;
+    assert.ok(beforeStop > 0);
     stop(h);
+    assert.equal(h.rail.scrollLeft, beforeStop, 'cancellation preserves scrollLeft exactly');
     assert.equal(h.rail.style.scrollSnapType, '');
     assert.equal(h.rail.style.scrollBehavior, '');
     assert.equal(h.frames.size, 0);
+    h.frame(100);
+    assert.equal(h.rail.scrollLeft, beforeStop, 'no later frame moves the rail');
   }
-  const hidden = createHarness();
-  hidden.pointerDown(14);
-  hidden.advance(250);
-  hidden.frame(16);
-  hidden.document.hidden = true;
-  hidden.dispatchDocument('visibilitychange');
-  assert.equal(hidden.rail.style.scrollSnapType, '');
-  assert.equal(hidden.rail.style.scrollBehavior, '');
-  assert.equal(hidden.frames.size, 0);
 });
