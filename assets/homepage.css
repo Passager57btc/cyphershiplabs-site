@@ -33,6 +33,11 @@ h1{font-size:clamp(52px,5.1vw,74px);margin:0 0 30px;max-width:11ch}
 .studio-services h3{font-size:26px;margin:0 0 8px}
 .studio-services p{color:var(--muted);font-size:15px;margin:0;line-height:1.65}
 .crew{padding-top:0}
+.crew .section-heading{align-items:start;margin-bottom:24px}
+.crew .section-heading .eyebrow,.crew .section-heading .section-intro{margin-top:0}
+.crew .crew-toolbar{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:20px}
+.crew .crew-toolbar .crew-controls,.crew .crew-toolbar .crew-context{margin:0}
+.crew.observatory-team .crew-toolbar{justify-content:flex-end}
 .crew-controls{display:flex;gap:10px;margin-top:23px}
 .crew-controls button{width:43px;height:43px;border:1px solid var(--line);border-radius:50%;color:var(--text);background:rgba(13,20,33,.7);line-height:1}
 .crew-controls button:hover{border-color:var(--ion);color:var(--ion)}
@@ -78,6 +83,9 @@ h1{font-size:58px;line-height:1.02;margin-bottom:25px;max-width:11ch}
 .studio-services p{font-size:17px;line-height:1.7}
 .crew{padding-top:0}
 .crew .section-heading{gap:23px}
+.crew .crew-toolbar{flex-wrap:wrap}
+.crew .crew-toolbar .crew-context{font-size:16px;line-height:1.6;flex-basis:100%}
+.crew .crew-toolbar .crew-controls{margin-left:auto}
 .crew-controls{margin-top:20px}
 .crew-context{font-size:14px;line-height:1.6;margin:0 0 20px}
 .crew-rail{margin-right:-24px;padding-right:24px;gap:16px}
