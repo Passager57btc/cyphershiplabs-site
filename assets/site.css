@@ -100,6 +100,7 @@ h2{font-size:clamp(34px,3.6vw,49px);margin:0}
 .site-footer{padding-bottom:30px;background:rgba(7,9,17,.8)}
 .footer-main{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:40px;padding-bottom:45px}
 .footer-main p{margin:0;color:var(--quiet);font-size:14px;text-align:center}
+@media(min-width:801px){.footer-main > p{transform:translateY(.825em)}}
 .footer-main .footer-links{justify-self:end}
 .footer-links{display:flex;gap:23px;font-size:13px}
 .footer-links a:hover{color:var(--ion)}
