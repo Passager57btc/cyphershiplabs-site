@@ -7,14 +7,13 @@ const test = require('node:test');
 const source = fs.readFileSync(path.join(__dirname, '../assets/homepage.js'), 'utf8');
 const styles = fs.readFileSync(path.join(__dirname, '../assets/homepage.css'), 'utf8');
 
-function createHarness(reducedMotion = false) {
+function createHarness(reducedMotion = false, rootCount = 1) {
   let now = 0;
   let nextId = 1;
   const timers = new Map();
   const frames = new Map();
   const windowListeners = new Map();
   const documentListeners = new Map();
-  const scrollCalls = [];
 
   class Target {
     constructor() { this.listeners = new Map(); }
@@ -31,31 +30,36 @@ function createHarness(reducedMotion = false) {
     }
   }
 
-  const rail = new Target();
-  rail.style = { scrollSnapType: '', scrollBehavior: '' };
-  rail.scrollLeft = 0;
-  rail.scrollWidth = 1180;
-  rail.clientWidth = 440;
-  rail.clientLeft = 0;
-  rail.getBoundingClientRect = () => ({ left: 0 });
-  const cards = Array.from({ length: 5 }, (_, index) => ({
-    offsetWidth: 220,
-    getBoundingClientRect: () => ({ left: index * 240 - rail.scrollLeft })
-  }));
-  rail.querySelector = selector => selector === '.crew-card' ? cards[0] : null;
-  rail.querySelectorAll = selector => selector === '.crew-card' ? cards : [];
-  rail.scrollBy = ({ left, behavior }) => {
-    scrollCalls.push({ left, behavior });
-    rail.scrollLeft = Math.max(0, Math.min(rail.scrollLeft + left, rail.scrollWidth - rail.clientWidth));
-  };
-
-  const button = new Target();
-  button.dataset = { crewDirection: '1' };
-  button.setPointerCapture = () => {};
+  const carousels = Array.from({ length: rootCount }, () => {
+    const rail = new Target();
+    const scrollCalls = [];
+    rail.style = { scrollSnapType: '', scrollBehavior: '' };
+    rail.scrollLeft = 0;
+    rail.scrollWidth = 1180;
+    rail.clientWidth = 440;
+    rail.clientLeft = 0;
+    rail.getBoundingClientRect = () => ({ left: 0 });
+    const cards = Array.from({ length: 5 }, (_, index) => ({
+      offsetWidth: 220,
+      getBoundingClientRect: () => ({ left: index * 240 - rail.scrollLeft })
+    }));
+    rail.querySelector = selector => selector === '.crew-card' ? cards[0] : null;
+    rail.querySelectorAll = selector => selector === '.crew-card' ? cards : [];
+    rail.scrollBy = ({ left, behavior }) => {
+      scrollCalls.push({ left, behavior });
+      rail.scrollLeft = Math.max(0, Math.min(rail.scrollLeft + left, rail.scrollWidth - rail.clientWidth));
+    };
+    const button = new Target();
+    button.dataset = { crewDirection: '1' };
+    button.setPointerCapture = () => {};
+    const root = new Target();
+    root.querySelector = selector => selector === '.crew-rail' ? rail : null;
+    root.querySelectorAll = selector => selector === '[data-crew-direction]' ? [button] : [];
+    return { root, rail, button, scrollCalls };
+  });
   const document = {
     hidden: false,
-    querySelector: selector => selector === '.crew-rail' ? rail : null,
-    querySelectorAll: selector => selector === '[data-crew-direction]' ? [button] : [],
+    querySelectorAll: selector => selector === '[data-crew-carousel]' ? carousels.map(carousel => carousel.root) : [],
     addEventListener(type, listener) {
       const list = documentListeners.get(type) || [];
       list.push(listener);
@@ -114,18 +118,18 @@ function createHarness(reducedMotion = false) {
     event.type = type;
     for (const listener of documentListeners.get(type) || []) listener(event);
   }
-  function pointerDown(pointerId = 1) {
-    button.dispatch('pointerdown', { isPrimary: true, button: 0, pointerId, timeStamp: now });
+  function pointerDown(pointerId = 1, carouselIndex = 0) {
+    carousels[carouselIndex].button.dispatch('pointerdown', { isPrimary: true, button: 0, pointerId, timeStamp: now });
   }
-  function pointerClick(pointerId = 1) {
+  function pointerClick(pointerId = 1, carouselIndex = 0) {
     let prevented = false;
-    button.dispatch('click', {
+    carousels[carouselIndex].button.dispatch('click', {
       detail: 1, pointerId, timeStamp: now,
       preventDefault() { prevented = true; }
     });
     return prevented;
   }
-  return { rail, button, document, scrollCalls, advance, frame, dispatchWindow, dispatchDocument, pointerDown, pointerClick, frames };
+  return { ...carousels[0], carousels, rail: carousels[0].rail, button: carousels[0].button, scrollCalls: carousels[0].scrollCalls, document, advance, frame, dispatchWindow, dispatchDocument, pointerDown, pointerClick, frames };
 }
 
 test('a brief pointer click advances one card once', () => {
@@ -183,4 +187,43 @@ test('pointer cancel, blur and hidden page preserve the current position and sto
     h.frame(100);
     assert.equal(h.rail.scrollLeft, beforeStop, 'no later frame moves the rail');
   }
+});
+
+test('two carousel roots keep scrolling and held-click suppression independent', () => {
+  const h = createHarness(false, 2);
+  h.pointerDown(21, 0);
+  h.advance(250);
+  h.frame(16);
+  h.frame(50);
+  const firstBeforeOtherClick = h.carousels[0].rail.scrollLeft;
+  assert.ok(firstBeforeOtherClick > 0);
+
+  h.pointerClick(22, 1);
+  assert.equal(h.carousels[1].scrollCalls.length, 1, 'the second rail responds while the first is held');
+  assert.equal(h.carousels[1].rail.scrollLeft, 240);
+  h.frame(50);
+  assert.ok(h.carousels[0].rail.scrollLeft > firstBeforeOtherClick);
+
+  const beforeRelease = h.carousels[0].rail.scrollLeft;
+  h.dispatchWindow('pointerup', { pointerId: 21, timeStamp: 366 });
+  assert.equal(h.carousels[0].rail.scrollLeft, beforeRelease);
+  assert.equal(h.pointerClick(21, 0), true, 'only the held rail suppresses its release click');
+  assert.equal(h.carousels[0].scrollCalls.length, 0);
+  assert.equal(h.carousels[1].scrollCalls.length, 1);
+});
+
+test('reduced motion uses discrete held steps and instant click movement', () => {
+  const held = createHarness(true);
+  held.pointerDown(31);
+  held.advance(250);
+  held.frame(16);
+  assert.equal(held.rail.scrollLeft, 0, 'no movement before the reduced-motion step delay');
+  held.frame(720);
+  assert.equal(held.rail.scrollLeft, 240, 'a held reduced-motion step moves one card');
+  held.dispatchWindow('pointerup', { pointerId: 31, timeStamp: 986 });
+  assert.equal(held.pointerClick(31), true);
+
+  const click = createHarness(true);
+  click.pointerClick(32);
+  assert.equal(click.scrollCalls[0].behavior, 'instant');
 });
