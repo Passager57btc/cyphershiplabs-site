@@ -200,3 +200,6 @@ h1{font-size:58px;line-height:1.02;margin-bottom:25px;max-width:11ch}
 .crew-controls button{touch-action:none;user-select:none;-webkit-user-select:none}
 .observatory-team{padding-top:72px}
 @media(max-width:800px){.observatory-team{padding-top:48px}}
+
+.blueprints-all{margin:32px 0 0}
+.blueprints-all .text-link{color:var(--ion,#5FC0D6);text-decoration:underline;text-underline-offset:4px}

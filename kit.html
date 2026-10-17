@@ -53,7 +53,7 @@
 <header class="site-header"><div class="wrap header-inner">
 <a class="brand" href="/" aria-label="CypherShip Labs home"><svg class="mark" width="36" height="36" viewBox="177 49 900 900" aria-hidden="true"><path fill="#5FC0D6" d="M524.47 347 401 512 401 565 226 740 208 836 538 642 471 592Z"/><path fill="#5FC0D6" d="M729.53 347 853 512 853 565 1028 740 1046 836 716 642 783 592Z"/><path fill="#E3B168" d="M627 162 553 285 486 592 553 642 553 516 612 482Z"/><path fill="#E3B168" d="M627 162 701 285 768 592 701 642 701 516 642 482Z"/><path fill="#E3B168" d="M627 526 681 558 681 792 627 826 573 792 573 558Z"/><path fill="#E3B168" d="M553 659 459.44 714 553 826Z"/><path fill="#E3B168" d="M701 659 794.56 714 701 826Z"/></svg><span>CypherShip<span class="brand-labs"> Labs</span></span></a>
 <button class="menu-toggle" aria-expanded="false" aria-controls="site-navigation"><span>Menu</span><span class="menu-lines" aria-hidden="true"></span></button>
-<nav lang="en" id="site-navigation" class="site-navigation" aria-label="Main navigation"><a href="/products.html">Fleet</a><a href="/#blueprints">Blueprints</a><a href="/agentic.html">Shipyard</a><a href="/about.html">About</a><a href="/contact.html" class="nav-contact">First contact <span aria-hidden="true">↗</span></a><span class="lang-switch" role="group" aria-label="Language / Langue"><span aria-current="true">EN</span><span aria-hidden="true"> / </span><a href="/fr/kit.html" lang="fr" hreflang="fr" aria-label="FR, lire cette page en français">FR</a></span></nav>
+<nav lang="en" id="site-navigation" class="site-navigation" aria-label="Main navigation"><a href="/products.html">Fleet</a><a href="/blueprints.html">Blueprints</a><a href="/agentic.html">Shipyard</a><a href="/about.html">About</a><a href="/contact.html" class="nav-contact">First contact <span aria-hidden="true">↗</span></a><span class="lang-switch" role="group" aria-label="Language / Langue"><span aria-current="true">EN</span><span aria-hidden="true"> / </span><a href="/fr/kit.html" lang="fr" hreflang="fr" aria-label="FR, lire cette page en français">FR</a></span></nav>
 </div></header>
 <main id="main">
   <section class="hero kit-hero">
@@ -63,7 +63,7 @@
       <h1>Stop re-explaining your project to your AI <em>every session.</em></h1>
       <p class="sub">The Crew Kit is the method we use at CypherShip Labs to work with a small team of AI agents, each with its own role, its own memory and its own rules. Blank templates you copy and name yourself, plus an installation guide, for Claude Code (and ChatGPT / Codex).</p>
       <p class="kit-status"><strong>In preparation.</strong> Not for sale yet: you can sign up to be told when it is ready. Target: end of 2026, date to be confirmed.</p>
-      <p class="ctas"><a href="#liste-attente" class="button primary">Tell me when it’s out <span aria-hidden="true">↓</span></a></p>
+      <p class="ctas"><a href="/blueprints.html#liste-attente" class="button primary">Join the Blueprints waitlist <span aria-hidden="true">↗</span></a></p>
     </div>
   </section>
 
@@ -219,34 +219,10 @@
   <section id="liste-attente">
     <div class="wrap">
       <div class="waitlist">
-        <div class="eyebrow">Waitlist</div>
-        <h2>Hear first, for the Blueprints you choose</h2>
-        <p class="waitlist-intro">Leave your email and tick the Blueprints you want to hear about. None is on sale yet and none has a price. Free, no commitment.</p>
-        <form id="waitlist-form" class="waitlist-form" method="POST" action="https://84f5ee95.sibforms.com/serve/MUIFAPmsY8tV3QWxsV2UTWfAzjUy8CXjoBpXfCMALX5jRhlta4kPWV-SxbdpD3MBdaCy2HnLzMvSGWopU6_OdRzvf1hqttS9j4IaSRsNyhZP1N3xdpDqwgwGV-4YIKbZ1EHIVjghceQ-N65J7oRkXLsuHRjeWQqUGhfsg8OjBvjqYy31mo8DuWa5_VNePvby7nLCa86E-Z5rM-NEuA==">
-          <label class="field-label" for="wl-email">Email address</label>
-          <input class="field" type="email" id="wl-email" name="EMAIL" required autocomplete="email" inputmode="email" placeholder="you@example.com">
-          <div class="hp" aria-hidden="true"><input type="text" name="email_address_check" value="" tabindex="-1" autocomplete="off"></div>
-          <input type="hidden" name="locale" value="en">
-          <input type="hidden" name="LANGUE" value="en">
-          <fieldset class="bp-choices" aria-describedby="bp-hint bp-error">
-            <legend>Which Blueprints interest you?</legend>
-            <p class="bp-hint" id="bp-hint">Tick one or more.</p>
-            <div class="bp-option"><input type="checkbox" id="wl-bp-crew-kit" name="BP_CREW_KIT" value="1"><label for="wl-bp-crew-kit">Crew Kit (in preparation)</label></div>
-            <div class="bp-option"><input type="checkbox" id="wl-bp-ship-kit" name="BP_SHIP_KIT" value="1"><label for="wl-bp-ship-kit">Ship Kit (planned)</label></div>
-            <div class="bp-option"><input type="checkbox" id="wl-bp-bridge-kit" name="BP_BRIDGE_KIT" value="1"><label for="wl-bp-bridge-kit">Bridge Kit (planned)</label></div>
-            <div class="bp-option"><input type="checkbox" id="wl-bp-transmission-kit" name="BP_TRANSMISSION_KIT" value="1"><label for="wl-bp-transmission-kit">Transmission Kit (in development)</label></div>
-            <div class="bp-option"><input type="checkbox" id="wl-bp-grimoire" name="BP_GRIMOIRE" value="1"><label for="wl-bp-grimoire">The Grimoire (in development)</label></div>
-            <p class="bp-error" id="bp-error" role="alert"></p>
-          </fieldset>
-          <div class="consent">
-            <input type="checkbox" id="wl-consent" name="OPT_IN" value="1" required>
-            <label for="wl-consent">I agree to receive emails from CypherShip Labs LLC about the release of the Blueprints I ticked above (availability, date, price). I can withdraw my consent at any time.</label>
-          </div>
-          <button type="submit" class="button primary">Notify me</button>
-          <p class="form-help">You’ll first get a confirmation email: click it to validate your sign-up (double opt-in). After that, one email when each Blueprint you ticked is released, and a message if its date changes. Unsubscribe in one click, at any time. No spam, and your address is never resold.</p>
-        </form>
-        <div id="waitlist-msg" class="form-msg" role="status" aria-live="polite" tabindex="-1"></div>
-        <p class="notice"><strong>Your data.</strong> Controller: CypherShip Labs LLC (a New Mexico company, United States), 1209 Mountain Road Place NE, Albuquerque, NM 87110, USA. Purpose: to tell you when the Blueprints you selected are released (and of any change of date). Legal basis: your consent (art. 6.1.a GDPR), confirmed in two steps. Data: your email address, the Blueprints you selected, your language (English or French), plus the date, time and IP address of your confirmation (proof of consent); open and click statistics are anonymised. We do not sell or rent it. It is processed on our behalf by Brevo (Sendinblue SAS, Paris), hosted in the European Union; its sub-processors may, where applicable, process data outside the EU, under the Data Privacy Framework or standard contractual clauses. Retention: until you unsubscribe. In any case, your data is deleted at the latest 12 months after the release of the last Blueprint you selected, and no later than 36 months after your confirmation. If a Blueprint is abandoned, we remove it from your choices and let you know; your data is deleted once none remains. We will only write to you about the Blueprints you selected. Any other Blueprint would require a new consent from you. To change your choices, write to <a href="mailto:contact@cyphershiplabs.com">contact@cyphershiplabs.com</a>. Your rights: access, rectification, erasure, restriction, objection, and withdrawal of consent, by writing to <a href="mailto:contact@cyphershiplabs.com">contact@cyphershiplabs.com</a>; every email contains an unsubscribe link. You may also lodge a complaint with the CNIL (<a href="https://www.cnil.fr" rel="noopener">cnil.fr</a>) or with your local data protection authority. <a href="/legal.html#donnees-personnelles">Privacy policy</a></p>
+        <h2>Waitlist</h2>
+        <p class="waitlist-intro">One free list covers all five Blueprints, the Crew Kit included. Tick the ones you want to hear about.</p>
+        <p class="ctas"><a href="/blueprints.html#liste-attente" class="button primary">Join the waitlist <span aria-hidden="true">↗</span></a></p>
+        <p class="form-help">Nothing is on sale yet, and no date or price is set.</p>
       </div>
     </div>
   </section>
@@ -273,65 +249,6 @@
     </div>
   </section>
 </main>
-<script>
-(function () {
-  var form = document.getElementById('waitlist-form');
-  var msg = document.getElementById('waitlist-msg');
-  if (!form || !msg || !window.fetch || !window.FormData) return;
-  var sending = false;
-  form.addEventListener('change', function (e) {
-    if (e.target.name && e.target.name.indexOf('BP_') === 0) document.getElementById('bp-error').textContent = '';
-  });
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    var checked = form.querySelectorAll('.bp-choices input[type=checkbox]:checked').length;
-    var bpErr = document.getElementById('bp-error');
-    if (!checked) { // au moins un Blueprint requis
-      bpErr.textContent = "Tick at least one Blueprint.";
-      form.querySelector('.bp-choices input').focus();
-      return;
-    }
-    bpErr.textContent = '';
-    if (sending) return; // une seule requête à la fois (double clic, Entrée + clic, requestSubmit)
-    sending = true;
-    var btn = form.querySelector('button[type=submit]');
-    btn.disabled = true;
-    msg.className = 'form-msg';
-    msg.textContent = 'Sending…';
-    // Même appel que le script officiel Brevo : POST + isAjax=1, réponse JSON {success, errors, message}.
-    var url = form.action + (form.action.indexOf('?') === -1 ? '?' : '&') + 'isAjax=1';
-    var sent = false;
-    fetch(url, { method: 'POST', body: new FormData(form) }).then(function (res) {
-      sent = true; // le serveur a répondu : la requête est partie, on ne la renvoie jamais
-      return res.json();
-    }).then(function (data) {
-      if (data && data.success === true) {
-        form.hidden = true;
-        msg.className = 'form-msg ok';
-        msg.textContent = 'Thank you! Check your inbox: a confirmation email has just been sent. Click it to validate your sign-up.';
-        msg.focus();
-      } else {
-        sending = false;
-        btn.disabled = false;
-        msg.className = 'form-msg err';
-        msg.textContent = 'Your sign-up wasn’t accepted. Check your email address and the consent box, then try again.';
-      }
-    }).catch(function () {
-      if (sent) { // réponse reçue mais illisible : pas de second envoi
-        sending = false;
-        btn.disabled = false;
-        msg.className = 'form-msg err';
-        msg.textContent = 'Your sign-up wasn’t accepted. Check your email address and the consent box, then try again.';
-        return;
-      }
-      // Réseau/CORS (ex. origine non autorisée) ou réponse illisible : envoi classique du formulaire,
-      // l’utilisateur voit la page de réponse de Brevo. Aucun faux succès affiché.
-      msg.textContent = 'Sending…';
-      form.submit();
-    });
-  });
-})();
-</script>
 <footer class="site-footer" lang="en"><div class="wrap footer-main"><a class="brand" href="/"><svg class="mark" width="36" height="36" viewBox="177 49 900 900" aria-hidden="true"><path fill="#5FC0D6" d="M524.47 347 401 512 401 565 226 740 208 836 538 642 471 592Z"/><path fill="#5FC0D6" d="M729.53 347 853 512 853 565 1028 740 1046 836 716 642 783 592Z"/><path fill="#E3B168" d="M627 162 553 285 486 592 553 642 553 516 612 482Z"/><path fill="#E3B168" d="M627 162 701 285 768 592 701 642 701 516 642 482Z"/><path fill="#E3B168" d="M627 526 681 558 681 792 627 826 573 792 573 558Z"/><path fill="#E3B168" d="M553 659 459.44 714 553 826Z"/><path fill="#E3B168" d="M701 659 794.56 714 701 826Z"/></svg><span>CypherShip<span class="brand-labs"> Labs</span></span></a><p>Systems with a purpose.<br>A lab with a trajectory.</p><div class="footer-links"><a href="/manifesto.html">Manifesto</a><a href="/legal.html">Legal</a><a href="/contact.html">Contact</a></div></div><div class="wrap footer-bottom"><span>CypherShip Labs LLC</span><span>SabaiPilot · PetraPilot · CircePilot</span></div></footer>
 </body>
 </html>
