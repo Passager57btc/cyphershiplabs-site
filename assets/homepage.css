@@ -170,6 +170,8 @@ h1{font-size:58px;line-height:1.02;margin-bottom:25px;max-width:11ch}
 .blueprint-next h3{font-size:32px;line-height:1.15;margin:0 0 20px}
 .blueprint-next h3 em{color:var(--flare)}
 .blueprint-next>p:not(.eyebrow){font-size:17px;color:var(--muted);line-height:1.75;max-width:45ch}
+.blueprint-next .blueprint-next-link{display:inline-block;margin-top:14px;padding:6px 0;color:var(--ion,#5FC0D6);font-size:16px;text-decoration:underline;text-underline-offset:4px}
+.blueprint-next .blueprint-next-link:focus-visible{outline:2px solid var(--ion,#5FC0D6);outline-offset:3px}
 .blueprint-next .blueprint-next-status{font-family:var(--font-mono);font-size:12px;color:var(--quiet);margin:25px 0 0}
 @media(min-width:801px) and (max-width:1050px){.blueprint-next{padding:26px 18px}.blueprint-next h3{font-size:29px}}
 @media(max-width:800px){.blueprint-next-grid{grid-template-columns:1fr}.blueprint-next{padding:32px}.blueprint-next>p:not(.eyebrow){font-size:18px}.blueprint-next .blueprint-next-status{font-size:13px}}

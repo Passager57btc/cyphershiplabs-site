@@ -220,22 +220,33 @@
     <div class="wrap">
       <div class="waitlist">
         <div class="eyebrow">Liste d’attente</div>
-        <h2>Soyez prévenu(e) quand il sort</h2>
+        <h2>Soyez prévenu(e), pour les Blueprints de votre choix</h2>
+        <p class="waitlist-intro">Laissez votre e-mail et cochez les Blueprints dont vous voulez des nouvelles. Aucun n’est encore en vente et aucun n’a de prix. Gratuit, sans engagement.</p>
         <form id="waitlist-form" class="waitlist-form" method="POST" action="https://84f5ee95.sibforms.com/serve/MUIFAPmsY8tV3QWxsV2UTWfAzjUy8CXjoBpXfCMALX5jRhlta4kPWV-SxbdpD3MBdaCy2HnLzMvSGWopU6_OdRzvf1hqttS9j4IaSRsNyhZP1N3xdpDqwgwGV-4YIKbZ1EHIVjghceQ-N65J7oRkXLsuHRjeWQqUGhfsg8OjBvjqYy31mo8DuWa5_VNePvby7nLCa86E-Z5rM-NEuA==">
           <label class="field-label" for="wl-email">Adresse e-mail</label>
           <input class="field" type="email" id="wl-email" name="EMAIL" required autocomplete="email" inputmode="email" placeholder="vous@exemple.fr">
           <div class="hp" aria-hidden="true"><input type="text" name="email_address_check" value="" tabindex="-1" autocomplete="off"></div>
           <input type="hidden" name="locale" value="fr">
           <input type="hidden" name="LANGUE" value="fr">
+          <fieldset class="bp-choices" aria-describedby="bp-hint bp-error">
+            <legend>Quels Blueprints vous intéressent ?</legend>
+            <p class="bp-hint" id="bp-hint">Cochez-en un ou plusieurs.</p>
+            <div class="bp-option"><input type="checkbox" id="wl-bp-crew-kit" name="BP_CREW_KIT" value="1"><label for="wl-bp-crew-kit">Crew Kit (en préparation)</label></div>
+            <div class="bp-option"><input type="checkbox" id="wl-bp-ship-kit" name="BP_SHIP_KIT" value="1"><label for="wl-bp-ship-kit">Ship Kit (prévu)</label></div>
+            <div class="bp-option"><input type="checkbox" id="wl-bp-bridge-kit" name="BP_BRIDGE_KIT" value="1"><label for="wl-bp-bridge-kit">Bridge Kit (prévu)</label></div>
+            <div class="bp-option"><input type="checkbox" id="wl-bp-transmission-kit" name="BP_TRANSMISSION_KIT" value="1"><label for="wl-bp-transmission-kit">Transmission Kit (en développement)</label></div>
+            <div class="bp-option"><input type="checkbox" id="wl-bp-grimoire" name="BP_GRIMOIRE" value="1"><label for="wl-bp-grimoire">Le Grimoire (en développement)</label></div>
+            <p class="bp-error" id="bp-error" role="alert"></p>
+          </fieldset>
           <div class="consent">
             <input type="checkbox" id="wl-consent" name="OPT_IN" value="1" required>
-            <label for="wl-consent">J’accepte de recevoir par e-mail de CypherShip Labs LLC une information sur la sortie du Crew Kit (disponibilité, date, prix). Je peux retirer mon consentement à tout moment.</label>
+            <label for="wl-consent">J’accepte de recevoir par e-mail de CypherShip Labs LLC une information sur la sortie des Blueprints cochés ci-dessus (disponibilité, date, prix). Je peux retirer mon consentement à tout moment.</label>
           </div>
-          <button type="submit" class="button primary">Me prévenir à la sortie</button>
-          <p class="form-help">Vous recevrez d’abord un email de confirmation : cliquez pour valider votre inscription (double opt-in). Ensuite, un email à la sortie du kit, et un message si la date change. Désinscription en un clic, à tout moment. Pas de spam, pas de revente de votre adresse.</p>
+          <button type="submit" class="button primary">Me prévenir</button>
+          <p class="form-help">Vous recevrez d’abord un email de confirmation : cliquez pour valider votre inscription (double opt-in). Ensuite, un email à la sortie de chaque Blueprint coché, et un message si sa date change. Désinscription en un clic, à tout moment. Pas de spam, pas de revente de votre adresse.</p>
         </form>
         <div id="waitlist-msg" class="form-msg" role="status" aria-live="polite" tabindex="-1"></div>
-        <p class="notice"><strong>Vos données.</strong> Responsable du traitement : CypherShip Labs LLC (société du Nouveau-Mexique, États-Unis), 1209 Mountain Road Place NE, Albuquerque, NM 87110, USA. Finalité : vous prévenir de la sortie du Crew Kit (et d’un éventuel changement de date). Base légale : votre consentement (art. 6.1.a du RGPD), confirmé en deux temps. Données : votre adresse e-mail, plus la date, l’heure et l’adresse IP de votre confirmation (preuve du consentement) ; les statistiques d’ouverture et de clic sont anonymisées. Nous ne les vendons ni ne les louons. Elles sont traitées pour notre compte par Brevo (Sendinblue SAS, Paris), hébergées dans l’Union européenne ; ses sous-traitants peuvent, le cas échéant, traiter des données hors UE, dans le cadre du Data Privacy Framework ou de clauses contractuelles types. Conservation : jusqu’à votre désinscription, et au plus tard 12 mois après la sortie du kit ; si le projet est abandonné, la liste est supprimée. Vos droits : accès, rectification, effacement, limitation, opposition, retrait du consentement, en écrivant à <a href="mailto:contact@cyphershiplabs.com">contact@cyphershiplabs.com</a> ; chaque e-mail contient un lien de désinscription. Vous pouvez aussi saisir la CNIL (<a href="https://www.cnil.fr" rel="noopener">cnil.fr</a>) ou l’autorité de protection des données de votre pays. <a href="/legal.html#donnees-personnelles">Politique de confidentialité</a></p>
+        <p class="notice"><strong>Vos données.</strong> Responsable du traitement : CypherShip Labs LLC (société du Nouveau-Mexique, États-Unis), 1209 Mountain Road Place NE, Albuquerque, NM 87110, USA. Finalité : vous prévenir de la sortie des Blueprints que vous avez sélectionnés (et d’un éventuel changement de date). Base légale : votre consentement (art. 6.1.a du RGPD), confirmé en deux temps. Données : votre adresse e-mail, les Blueprints que vous avez sélectionnés, votre langue (anglais ou français), plus la date, l’heure et l’adresse IP de votre confirmation (preuve du consentement) ; les statistiques d’ouverture et de clic sont anonymisées. Nous ne les vendons ni ne les louons. Elles sont traitées pour notre compte par Brevo (Sendinblue SAS, Paris), hébergées dans l’Union européenne ; ses sous-traitants peuvent, le cas échéant, traiter des données hors UE, dans le cadre du Data Privacy Framework ou de clauses contractuelles types. Conservation : jusqu’à votre désinscription. En tout état de cause, vos données sont supprimées au plus tard 12 mois après la sortie du dernier Blueprint sélectionné, et au plus tard 36 mois après votre confirmation. Si un Blueprint est abandonné, nous le retirons de vos choix et vous en informons ; vos données sont supprimées lorsqu’il n’en reste aucun. Nous ne vous écrivons que pour les Blueprints sélectionnés. Tout autre Blueprint nécessiterait un nouveau consentement de votre part. Pour modifier vos choix, écrivez à <a href="mailto:contact@cyphershiplabs.com">contact@cyphershiplabs.com</a>. Vos droits : accès, rectification, effacement, limitation, opposition, retrait du consentement, en écrivant à <a href="mailto:contact@cyphershiplabs.com">contact@cyphershiplabs.com</a> ; chaque e-mail contient un lien de désinscription. Vous pouvez aussi saisir la CNIL (<a href="https://www.cnil.fr" rel="noopener">cnil.fr</a>) ou l’autorité de protection des données de votre pays. <a href="/legal.html#donnees-personnelles">Politique de confidentialité</a></p>
       </div>
     </div>
   </section>
@@ -257,7 +268,7 @@
         <div class="faq-item"><h3>Combien ça coûte ?</h3><p>Le tarif est en cours de révision et sera annoncé avant la mise en vente. S’inscrire ne coûte rien et n’engage pas à acheter.</p></div>
         <div class="faq-item"><h3>C’est une formation ?</h3><p>Non. C’est un dossier de modèles, une structure de mémoire, des règles et un guide écrit. Pas de vidéos de cours, pas d’abonnement.</p></div>
         <div class="faq-item"><h3>Qu’est-ce qui me garantit que ça marchera pour moi ?</h3><p>Rien, et on ne le prétend pas. C’est la méthode qu’on utilise réellement, et on vous dira précisément ce qu’elle fait et ne fait pas. Vous jugerez sur pièces.</p></div>
-        <div class="faq-item"><h3>Que faites-vous de mon adresse email ?</h3><p>Elle sert uniquement à vous prévenir de la sortie du kit. Elle est traitée par Brevo (hébergement UE), jamais vendue, et vous pouvez vous désinscrire à tout moment. Détails : <a href="/legal.html#donnees-personnelles">politique de confidentialité</a>.</p></div>
+        <div class="faq-item"><h3>Que faites-vous de mon adresse email ?</h3><p>Elle sert uniquement à vous prévenir de la sortie des Blueprints que vous avez choisis. Elle est traitée par Brevo (hébergement UE), jamais vendue, et vous pouvez vous désinscrire à tout moment. Détails : <a href="/legal.html#donnees-personnelles">politique de confidentialité</a>.</p></div>
       </div>
     </div>
   </section>
@@ -268,8 +279,19 @@
   var msg = document.getElementById('waitlist-msg');
   if (!form || !msg || !window.fetch || !window.FormData) return;
   var sending = false;
+  form.addEventListener('change', function (e) {
+    if (e.target.name && e.target.name.indexOf('BP_') === 0) document.getElementById('bp-error').textContent = '';
+  });
   form.addEventListener('submit', function (e) {
     e.preventDefault();
+    var checked = form.querySelectorAll('.bp-choices input[type=checkbox]:checked').length;
+    var bpErr = document.getElementById('bp-error');
+    if (!checked) { // au moins un Blueprint requis
+      bpErr.textContent = "Cochez au moins un Blueprint.";
+      form.querySelector('.bp-choices input').focus();
+      return;
+    }
+    bpErr.textContent = '';
     if (sending) return; // une seule requête à la fois (double clic, Entrée + clic, requestSubmit)
     sending = true;
     var btn = form.querySelector('button[type=submit]');

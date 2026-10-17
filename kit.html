@@ -220,22 +220,33 @@
     <div class="wrap">
       <div class="waitlist">
         <div class="eyebrow">Waitlist</div>
-        <h2>Hear first when it’s out</h2>
+        <h2>Hear first, for the Blueprints you choose</h2>
+        <p class="waitlist-intro">Leave your email and tick the Blueprints you want to hear about. None is on sale yet and none has a price. Free, no commitment.</p>
         <form id="waitlist-form" class="waitlist-form" method="POST" action="https://84f5ee95.sibforms.com/serve/MUIFAPmsY8tV3QWxsV2UTWfAzjUy8CXjoBpXfCMALX5jRhlta4kPWV-SxbdpD3MBdaCy2HnLzMvSGWopU6_OdRzvf1hqttS9j4IaSRsNyhZP1N3xdpDqwgwGV-4YIKbZ1EHIVjghceQ-N65J7oRkXLsuHRjeWQqUGhfsg8OjBvjqYy31mo8DuWa5_VNePvby7nLCa86E-Z5rM-NEuA==">
           <label class="field-label" for="wl-email">Email address</label>
           <input class="field" type="email" id="wl-email" name="EMAIL" required autocomplete="email" inputmode="email" placeholder="you@example.com">
           <div class="hp" aria-hidden="true"><input type="text" name="email_address_check" value="" tabindex="-1" autocomplete="off"></div>
           <input type="hidden" name="locale" value="en">
           <input type="hidden" name="LANGUE" value="en">
+          <fieldset class="bp-choices" aria-describedby="bp-hint bp-error">
+            <legend>Which Blueprints interest you?</legend>
+            <p class="bp-hint" id="bp-hint">Tick one or more.</p>
+            <div class="bp-option"><input type="checkbox" id="wl-bp-crew-kit" name="BP_CREW_KIT" value="1"><label for="wl-bp-crew-kit">Crew Kit (in preparation)</label></div>
+            <div class="bp-option"><input type="checkbox" id="wl-bp-ship-kit" name="BP_SHIP_KIT" value="1"><label for="wl-bp-ship-kit">Ship Kit (planned)</label></div>
+            <div class="bp-option"><input type="checkbox" id="wl-bp-bridge-kit" name="BP_BRIDGE_KIT" value="1"><label for="wl-bp-bridge-kit">Bridge Kit (planned)</label></div>
+            <div class="bp-option"><input type="checkbox" id="wl-bp-transmission-kit" name="BP_TRANSMISSION_KIT" value="1"><label for="wl-bp-transmission-kit">Transmission Kit (in development)</label></div>
+            <div class="bp-option"><input type="checkbox" id="wl-bp-grimoire" name="BP_GRIMOIRE" value="1"><label for="wl-bp-grimoire">The Grimoire (in development)</label></div>
+            <p class="bp-error" id="bp-error" role="alert"></p>
+          </fieldset>
           <div class="consent">
             <input type="checkbox" id="wl-consent" name="OPT_IN" value="1" required>
-            <label for="wl-consent">I agree to receive emails from CypherShip Labs LLC about the release of the Crew Kit (availability, date, price). I can withdraw my consent at any time.</label>
+            <label for="wl-consent">I agree to receive emails from CypherShip Labs LLC about the release of the Blueprints I ticked above (availability, date, price). I can withdraw my consent at any time.</label>
           </div>
-          <button type="submit" class="button primary">Tell me when it’s out</button>
-          <p class="form-help">You’ll first get a confirmation email: click it to validate your sign-up (double opt-in). After that, one email when the kit is released, and a message if the date changes. Unsubscribe in one click, at any time. No spam, and your address is never resold.</p>
+          <button type="submit" class="button primary">Notify me</button>
+          <p class="form-help">You’ll first get a confirmation email: click it to validate your sign-up (double opt-in). After that, one email when each Blueprint you ticked is released, and a message if its date changes. Unsubscribe in one click, at any time. No spam, and your address is never resold.</p>
         </form>
         <div id="waitlist-msg" class="form-msg" role="status" aria-live="polite" tabindex="-1"></div>
-        <p class="notice"><strong>Your data.</strong> Controller: CypherShip Labs LLC (a New Mexico company, United States), 1209 Mountain Road Place NE, Albuquerque, NM 87110, USA. Purpose: to tell you when the Crew Kit is released (and of any change of date). Legal basis: your consent (art. 6.1.a GDPR), confirmed in two steps. Data: your email address, plus the date, time and IP address of your confirmation (proof of consent); open and click statistics are anonymised. We do not sell or rent it. It is processed on our behalf by Brevo (Sendinblue SAS, Paris), hosted in the European Union; its sub-processors may, where applicable, process data outside the EU, under the Data Privacy Framework or standard contractual clauses. Retention: until you unsubscribe, and at most 12 months after the kit is released; if the project is abandoned, the list is deleted. Your rights: access, rectification, erasure, restriction, objection, and withdrawal of consent, by writing to <a href="mailto:contact@cyphershiplabs.com">contact@cyphershiplabs.com</a>; every email contains an unsubscribe link. You may also lodge a complaint with the CNIL (<a href="https://www.cnil.fr" rel="noopener">cnil.fr</a>) or with your local data protection authority. <a href="/legal.html#donnees-personnelles">Privacy policy</a></p>
+        <p class="notice"><strong>Your data.</strong> Controller: CypherShip Labs LLC (a New Mexico company, United States), 1209 Mountain Road Place NE, Albuquerque, NM 87110, USA. Purpose: to tell you when the Blueprints you selected are released (and of any change of date). Legal basis: your consent (art. 6.1.a GDPR), confirmed in two steps. Data: your email address, the Blueprints you selected, your language (English or French), plus the date, time and IP address of your confirmation (proof of consent); open and click statistics are anonymised. We do not sell or rent it. It is processed on our behalf by Brevo (Sendinblue SAS, Paris), hosted in the European Union; its sub-processors may, where applicable, process data outside the EU, under the Data Privacy Framework or standard contractual clauses. Retention: until you unsubscribe. In any case, your data is deleted at the latest 12 months after the release of the last Blueprint you selected, and no later than 36 months after your confirmation. If a Blueprint is abandoned, we remove it from your choices and let you know; your data is deleted once none remains. We will only write to you about the Blueprints you selected. Any other Blueprint would require a new consent from you. To change your choices, write to <a href="mailto:contact@cyphershiplabs.com">contact@cyphershiplabs.com</a>. Your rights: access, rectification, erasure, restriction, objection, and withdrawal of consent, by writing to <a href="mailto:contact@cyphershiplabs.com">contact@cyphershiplabs.com</a>; every email contains an unsubscribe link. You may also lodge a complaint with the CNIL (<a href="https://www.cnil.fr" rel="noopener">cnil.fr</a>) or with your local data protection authority. <a href="/legal.html#donnees-personnelles">Privacy policy</a></p>
       </div>
     </div>
   </section>
@@ -257,7 +268,7 @@
         <div class="faq-item"><h3>How much does it cost?</h3><p>The price is under review and will be announced before the kit goes on sale. Signing up costs nothing and doesn’t commit you to buying.</p></div>
         <div class="faq-item"><h3>Is it a course?</h3><p>No. It’s a set of templates, a memory structure, rules and a written guide. No course videos, no subscription.</p></div>
         <div class="faq-item"><h3>What guarantees it will work for me?</h3><p>Nothing, and we don’t claim otherwise. It’s the method we actually use, and we’ll tell you precisely what it does and doesn’t do. You’ll judge it on the evidence.</p></div>
-        <div class="faq-item"><h3>What do you do with my email address?</h3><p>It’s used only to tell you when the kit is out. It’s processed by Brevo (EU hosting), never sold, and you can unsubscribe at any time. Details: <a href="/legal.html#donnees-personnelles">privacy policy</a>.</p></div>
+        <div class="faq-item"><h3>What do you do with my email address?</h3><p>It’s used only to tell you when the Blueprints you chose are out. It’s processed by Brevo (EU hosting), never sold, and you can unsubscribe at any time. Details: <a href="/legal.html#donnees-personnelles">privacy policy</a>.</p></div>
       </div>
     </div>
   </section>
@@ -268,8 +279,19 @@
   var msg = document.getElementById('waitlist-msg');
   if (!form || !msg || !window.fetch || !window.FormData) return;
   var sending = false;
+  form.addEventListener('change', function (e) {
+    if (e.target.name && e.target.name.indexOf('BP_') === 0) document.getElementById('bp-error').textContent = '';
+  });
   form.addEventListener('submit', function (e) {
     e.preventDefault();
+    var checked = form.querySelectorAll('.bp-choices input[type=checkbox]:checked').length;
+    var bpErr = document.getElementById('bp-error');
+    if (!checked) { // au moins un Blueprint requis
+      bpErr.textContent = "Tick at least one Blueprint.";
+      form.querySelector('.bp-choices input').focus();
+      return;
+    }
+    bpErr.textContent = '';
     if (sending) return; // une seule requête à la fois (double clic, Entrée + clic, requestSubmit)
     sending = true;
     var btn = form.querySelector('button[type=submit]');
