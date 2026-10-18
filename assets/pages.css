@@ -237,6 +237,11 @@
 .page-kit .faq-item h3 { font-size:24px; line-height:1.3; margin-bottom:12px; }
 .page-kit .faq-item p { margin:0; }
 .page-kit .faq-item a, .page-kit .kit-text a { color:var(--ion); text-decoration:underline; text-underline-offset:4px; }
+.page-kit .step-list { list-style:none; counter-reset:step; padding:0; margin:0; max-width:900px; }
+.page-kit .step-list li { counter-increment:step; display:grid; grid-template-columns:64px minmax(0,1fr); gap:18px; margin:0; padding:16px 0; border-top:1px solid var(--line); font:500 24px/1.3 var(--font-display); color:var(--text); }
+.page-kit .step-list li::before { content:counter(step,decimal-leading-zero); font:13px/2.4 var(--font-mono); color:var(--ion); letter-spacing:1px; }
+.page-kit .step-list.step-plain li { grid-template-columns:minmax(0,1fr); }
+.page-kit .step-list.step-plain li::before { content:none; }
 @media(max-width:900px) {
   .page-kit .kit-grid { grid-template-columns:minmax(0,1fr); }
   .page-kit .crew-list li { grid-template-columns:110px minmax(0,1fr); gap:4px 16px; }
