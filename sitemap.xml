@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://cyphershiplabs.com/</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-21</lastmod>
   </url>
   <url>
     <loc>https://cyphershiplabs.com/products.html</loc>
-    <lastmod>2026-10-10</lastmod>
+    <lastmod>2026-10-21</lastmod>
   </url>
   <url>
     <loc>https://cyphershiplabs.com/agentic.html</loc>
@@ -75,5 +75,13 @@
   <url>
     <loc>https://cyphershiplabs.com/fr/grimoire.html</loc>
     <lastmod>2026-10-18</lastmod>
+  </url>
+  <url>
+    <loc>https://cyphershiplabs.com/fr/</loc>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://cyphershiplabs.com/fr/products.html</loc>
+    <lastmod>2026-10-21</lastmod>
   </url>
 </urlset>
