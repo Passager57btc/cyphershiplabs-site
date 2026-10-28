@@ -1,0 +1,48 @@
+/* The Grimoire: product-specific presentation; the shared site identity stays intact. */
+.page-grimoire .grimoire-hero-grid{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:clamp(36px,6vw,100px)}
+.page-grimoire .grimoire-intro h1{max-width:15ch;font-size:clamp(42px,4.6vw,69px)}
+.page-grimoire .grimoire-intro .sub{max-width:48ch}
+.page-grimoire .grimoire-facts{display:flex;gap:10px 24px;flex-wrap:wrap;margin-top:28px;color:var(--ion);font:12px/1.7 var(--font-mono)}
+.page-grimoire .grimoire-facts span{display:flex;align-items:center;gap:8px}
+.page-grimoire .grimoire-facts span::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--ion)}
+.page-grimoire .grimoire-edition{display:grid;justify-items:center;perspective:1200px;padding:18px 24px}
+.page-grimoire .grimoire-book{position:relative;width:min(100%,310px);aspect-ratio:.77;box-sizing:border-box;display:flex;flex-direction:column;padding:30px 30px 24px;border:1px solid rgba(227,177,104,.4);border-radius:4px 16px 16px 4px;background:radial-gradient(ellipse at 90% 10%,rgba(95,192,214,.1),transparent 65%),linear-gradient(115deg,#122130,#101923 60%,#0a111b);box-shadow:-8px 4px 0 #15222e,-9px 4px 0 rgba(227,177,104,.35),0 28px 70px #0007;transform:rotate(-5deg);overflow:hidden}
+.page-grimoire .grimoire-book::before{content:'';position:absolute;inset:0 auto 0 7px;width:1px;background:linear-gradient(transparent,#e3b16855,transparent)}
+.page-grimoire .book-series{color:var(--ion);font:10px/1.6 var(--font-mono);letter-spacing:.12em}
+.page-grimoire .book-title{position:relative;color:var(--text);font:500 clamp(26px,3.2vw,40px)/1.1 var(--font-display);letter-spacing:-.045em;margin-top:33px}
+.page-grimoire .book-title>span{position:absolute;top:0;right:0;color:var(--flare);font-size:26px}
+.page-grimoire .book-method{margin-top:15px;color:var(--muted);font:9px/1.8 var(--font-mono);letter-spacing:.09em}
+.page-grimoire .book-orbit{position:relative;width:100%;height:100px;margin:auto 0;display:flex;align-items:center;justify-content:space-evenly}
+.page-grimoire .book-orbit i,.page-grimoire .book-orbit b{position:absolute;width:72%;height:70%;border:1px solid #5fc0d62d;border-radius:50%;transform:rotate(-25deg)}
+.page-grimoire .book-orbit b{transform:rotate(25deg);border-color:#e3b1682d}
+.page-grimoire .book-orbit span{position:relative;display:grid;place-items:center;width:33px;height:33px;color:var(--flare);border:1px solid #e3b16888;background:#111e2a;border-radius:50%;font:11px var(--font-mono)}
+.page-grimoire .book-orbit span:last-child{color:var(--ion);border-color:#5fc0d688}
+.page-grimoire .book-footer{color:var(--quiet);font:9px/1.9 var(--font-mono);letter-spacing:.08em}
+.page-grimoire main .edition-caption{color:var(--quiet);font:11px/1.6 var(--font-mono);letter-spacing:.12em;margin:35px 0 0}
+.page-grimoire .edition-caption span{color:var(--flare);padding-inline:10px}
+.page-grimoire .grimoire-chapters{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:0 55px;padding:0;margin:0}
+.page-grimoire .grimoire-chapters li{display:grid;grid-template-columns:36px 1fr;gap:18px;border-top:1px solid var(--line);padding:28px 0;margin:0}
+.page-grimoire .chapter-index{color:var(--flare);font:12px/1.7 var(--font-mono);padding-top:4px}
+.page-grimoire .grimoire-chapters h3{font-size:24px;margin:0 0 12px;letter-spacing:-.025em}
+.page-grimoire .grimoire-chapters p{font-size:17px;margin:0;max-width:39ch}
+.page-grimoire .grimoire-offer-layout{display:grid;grid-template-columns:1fr .85fr;gap:clamp(32px,6vw,90px);align-items:center}
+.page-grimoire .grimoire-offer-layout h2{max-width:18ch;margin-bottom:28px}
+.page-grimoire .grimoire-offer-layout>div>p{max-width:45ch}
+.page-grimoire .grimoire-offer-layout .offer-context{font-size:16px;color:var(--quiet)}
+.page-grimoire .grimoire-offer{padding:34px;border:1px solid #e3b16850;border-radius:16px;background:linear-gradient(130deg,#e3b16808,#5fc0d607);min-width:0}
+.page-grimoire .offer-state{display:flex;align-items:center;gap:10px;color:var(--ion);font:11px/1.6 var(--font-mono);text-transform:uppercase;letter-spacing:.09em}
+.page-grimoire .offer-state i{width:5px;height:5px;background:var(--ion);border-radius:50%}
+.page-grimoire main .offer-price{font:500 clamp(42px,5vw,62px)/1.1 var(--font-display);color:var(--text);letter-spacing:-.05em;margin:28px 0 16px}
+.page-grimoire .offer-price>span{font:11px/1.5 var(--font-mono);letter-spacing:.05em;color:var(--quiet);margin-left:14px}
+.page-grimoire .offer-founder{color:var(--text);font-size:17px;margin:0 0 12px}
+.page-grimoire main .offer-next{font-size:15px;color:var(--quiet);margin:0 0 28px}
+.page-grimoire .grimoire-offer .button{width:100%;justify-content:space-between;min-height:48px;box-sizing:border-box;gap:12px}
+.page-grimoire main .offer-notice{font-size:13px;line-height:1.75;margin:20px 0 0;color:var(--quiet)}
+.page-grimoire .grimoire-answer{padding:24px 0;border-top:1px solid var(--line)}
+.page-grimoire .grimoire-answer summary{min-height:28px;cursor:pointer;color:var(--text);font:500 22px/1.4 var(--font-display);padding-right:10px}
+.page-grimoire .grimoire-answer summary::marker{color:var(--ion);font-size:14px}
+.page-grimoire .grimoire-answer summary:focus-visible{outline:2px solid var(--ion);outline-offset:6px;border-radius:3px}
+.page-grimoire .grimoire-answer p{margin:18px 0 0;padding-left:20px}
+.page-grimoire .cta-band h2{max-width:23ch}
+@media(max-width:900px){.page-grimoire .grimoire-hero-grid{gap:20px;grid-template-columns:1.15fr .85fr}.page-grimoire .grimoire-edition{padding-inline:10px}.page-grimoire .grimoire-book{padding:26px 24px 20px}.page-grimoire .book-title{font-size:32px}.page-grimoire .grimoire-offer-layout{gap:34px}}
+@media(max-width:680px){.page-grimoire .grimoire-hero-grid,.page-grimoire .grimoire-offer-layout,.page-grimoire .grimoire-chapters{grid-template-columns:minmax(0,1fr)}.page-grimoire .grimoire-intro h1{font-size:clamp(40px,8.5vw,58px);max-width:17ch}.page-grimoire .grimoire-edition{padding-block:32px 5px}.page-grimoire .grimoire-book{width:250px;min-height:330px}.page-grimoire .book-title{font-size:34px}.page-grimoire .grimoire-facts{gap:9px 18px;font-size:11px}.page-grimoire .grimoire-chapters{gap:0}.page-grimoire .grimoire-offer{padding:28px}.page-grimoire .grimoire-offer-layout h2{max-width:20ch}.page-grimoire .grimoire-answer summary{font-size:21px}.page-grimoire .grimoire-answer p{padding-left:0}.page-grimoire .grimoire-intro .button{min-height:48px}}
