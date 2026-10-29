@@ -271,3 +271,4 @@
 .page-blueprints .bp-status { font:13px/1.6 var(--font-mono); color:var(--ion); text-transform:uppercase; letter-spacing:1px; }
 .page-blueprints .bp-status strong { font-weight:500; }
 .page-blueprints .bp-link { color:var(--ion); text-decoration:underline; text-underline-offset:4px; }
+.page-grimoire .hero .ctas, .page-blueprints .hero .ctas { display:flex; flex-wrap:wrap; gap:12px; }

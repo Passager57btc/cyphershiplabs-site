@@ -18,3 +18,13 @@ Revue éditoriale indépendante GO après harmonisation des métadonnées FR et 
 4. Publier seulement l’état ainsi vérifié. Ne pas annoncer de témoignage, date ou compatibilité non testée.
 
 Les termes commerciaux du paiement, taxes, livraison, réduction Ultimate et vérifications prévente restent du côté du relais commercial ; cette préparation ne prétend pas les valider.
+
+## Activation préparée le 29 octobre — validation visuelle attendue
+
+La passation `handoff_claude_to_gpt_2026-10-29_grimoire_vente_ouverte.md` confirme côté Noos-Claude : achat TEST, fichiers identiques, remboursement TEST avec révocation, service en mode réel et lien Stripe limité à 50 paiements. Aucun achat réel de contrôle, selon décision de David.
+
+Les quatre pages Grimoire/Blueprints EN/FR portent désormais les boutons d’achat vers `https://buy.stripe.com/3cIfZj0oW9Yjajwf31abK01`. Disponibilité, métadonnées et FAQ sont alignées. Tarif conservé : 29 USD pour les 50 premiers acheteurs, puis 39 USD, sans compteur ni prix barré. Le formulaire d’attente conserve les quatre autres kits et la non-réservation ; action, consentement et script inchangés. Espacement des CTA hero corrigé sur mobile, CSS versionnée sur ces quatre pages.
+
+Revue indépendante Paris : GO pour présentation. Contrôles statiques : dix CTA exacts, liens/ancres et IDs, préservation des formulaires, diff propre. Aperçu local : `http://127.0.0.1:8826/fr/grimoire.html` ; les versions anglaises et Blueprints sont accessibles par la navigation. Aucune publication autorisée à ce stade : attendre le oui de David sur le rendu.
+
+Après le 50e paiement, le lien 29 USD se désactive. Noos-Claude créera le lien 39 USD ; les dix CTA des quatre pages et leur prix devront alors être mis à jour. Aucun basculement automatique à 39 USD n’est annoncé.
