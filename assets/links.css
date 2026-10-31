@@ -4,7 +4,7 @@
 .links-intro{text-align:center;margin-bottom:30px}
 .links-home{display:inline-flex;align-items:center;justify-content:center;margin-bottom:14px}
 .links-mark{display:block;width:64px;height:64px}
-.links-intro h1{font-size:32px;font-weight:600;letter-spacing:-1.1px;margin:0 0 9px}
+.links-intro h1{font-size:32px;font-weight:600;letter-spacing:-1.1px;max-width:none;margin:0 0 9px;text-align:center}
 .links-intro h1 span{font-weight:400;color:var(--muted)}
 .links-lab{font:10px/1.6 var(--font-mono);letter-spacing:1.5px;text-transform:uppercase;color:var(--ion);margin:0}
 .links-signature{font-size:13px;color:var(--muted);margin:16px 0 0}
