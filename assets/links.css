@@ -1,0 +1,37 @@
+.links-page{min-height:100svh;font-size:15px;isolation:isolate}
+.links-sky{position:fixed;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(180deg,rgba(7,9,17,.38),rgba(7,9,17,.88) 80%),url('/assets/cyphership-sky-v1.webp') center top/cover no-repeat}
+.links-wrap{width:min(100% - 40px,500px);margin-inline:auto;padding:44px 0 24px}
+.links-intro{text-align:center;margin-bottom:30px}
+.links-home{display:inline-flex;align-items:center;justify-content:center;margin-bottom:14px}
+.links-mark{display:block;width:64px;height:64px}
+.links-intro h1{font-size:32px;font-weight:600;letter-spacing:-1.1px;margin:0 0 9px}
+.links-intro h1 span{font-weight:400;color:var(--muted)}
+.links-lab{font:10px/1.6 var(--font-mono);letter-spacing:1.5px;text-transform:uppercase;color:var(--ion);margin:0}
+.links-signature{font-size:13px;color:var(--muted);margin:16px 0 0}
+.links-list{display:grid;gap:10px;scroll-margin-top:20px}
+.links-feature{display:block;padding:22px 24px 18px;border:1px solid rgba(227,177,104,.48);border-radius:10px;background:linear-gradient(125deg,rgba(47,36,28,.79),rgba(16,20,32,.95));position:relative;margin-bottom:6px;transition:border-color .2s,background .2s}
+.links-feature:hover{border-color:var(--flare);background:linear-gradient(125deg,rgba(62,46,32,.9),rgba(16,20,32,.95))}
+.links-feature-top,.links-feature-main,.links-feature-bottom{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.links-kicker,.links-edition{font:10px/1.5 var(--font-mono);letter-spacing:1px;color:var(--flare)}
+.links-edition{color:var(--muted);white-space:nowrap;letter-spacing:.5px}
+.links-feature-main{margin:23px 0 24px}
+.links-feature-title{display:block;font:500 36px/1.12 var(--font-display);letter-spacing:-1.1px}
+.links-feature-copy{display:block;font-size:12px;line-height:1.65;color:#c8c3c5;margin-top:10px;max-width:30ch}
+.links-flower{font-size:58px;line-height:1;color:var(--flare);font-family:var(--font-display);flex:none}
+.links-feature-bottom{border-top:1px solid rgba(227,177,104,.2);padding-top:13px;color:var(--flare);font-size:12px}
+.links-arrow{font:400 22px/1 var(--font-display);flex:none;color:var(--ion)}
+.links-feature .links-arrow{color:var(--flare)}
+.links-row{display:flex;align-items:center;gap:16px;padding:14px 20px;min-height:76px;border:1px solid var(--line);border-radius:8px;background:rgba(13,18,31,.86);transition:background .2s,border-color .2s}
+.links-row:hover{border-color:rgba(95,192,214,.6);background:rgba(23,34,50,.95)}
+.links-icon{width:28px;flex:none;display:flex;justify-content:center;align-items:center;color:var(--ion)}
+.links-icon svg{width:24px;height:24px;display:block}
+.links-x{font-size:24px;line-height:1}
+.links-row-copy{flex:1;min-width:0}
+.links-row-title{display:block;font-size:14px;line-height:1.5;font-weight:500}
+.links-row-detail{display:block;font:10px/1.7 var(--font-mono);color:var(--muted);overflow-wrap:anywhere;margin-top:2px}
+.links-footer{text-align:center;margin-top:27px;color:var(--quiet);font:10px/1.7 var(--font-mono);letter-spacing:1px}
+.links-footer-line{display:block;width:28px;height:1px;background:rgba(95,192,214,.4);margin:0 auto 12px}
+.links-footer p{margin:0}
+@media(min-width:700px){.links-wrap{padding-top:52px}.links-intro{margin-bottom:32px}}
+@media(max-width:360px){.links-wrap{width:calc(100% - 32px);padding-top:28px}.links-feature{padding:20px}.links-feature-title{font-size:32px}.links-flower{font-size:46px}.links-row{padding-inline:16px}.links-intro h1{font-size:29px}}
+@media(prefers-reduced-motion:reduce){.links-page{scroll-behavior:auto}.links-page a{transition:none}}
