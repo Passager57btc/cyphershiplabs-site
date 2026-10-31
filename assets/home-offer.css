@@ -1,0 +1,49 @@
+/* Homepage offer: the Blueprints family leads, with availability kept explicit. */
+.home-offer .offer-hero .hero-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.85fr);gap:clamp(48px,7vw,110px);min-height:650px;padding-block:76px}
+.home-offer .offer-hero .hero-copy{max-width:740px}
+.home-offer .offer-hero h1{font-size:clamp(48px,4.7vw,70px);line-height:1.07;max-width:none;letter-spacing:-.045em;margin-bottom:30px}
+.home-offer .offer-hero .hero-intro{font-size:21px;line-height:1.6;max-width:37ch;color:var(--text);margin-bottom:17px}
+.home-offer .offer-hero .hero-detail{font-size:16px;max-width:43ch;line-height:1.8;margin-bottom:30px}
+.home-offer .offer-hero .eyebrow{color:var(--ion);margin-bottom:28px;font-size:12px;letter-spacing:1.8px}
+.home-offer .offer-hero .button{gap:32px}
+.offer-range{align-self:center;border:1px solid rgba(95,192,214,.25);border-radius:12px;background:linear-gradient(130deg,rgba(23,38,53,.86),rgba(9,15,27,.94));box-shadow:0 30px 80px #0003;padding:26px 26px 20px;position:relative}
+.offer-range:before{content:'';position:absolute;left:26px;right:26px;top:0;height:1px;background:linear-gradient(90deg,transparent,var(--ion),transparent);opacity:.7}
+.range-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;color:var(--quiet);font:10px/1.5 var(--font-mono);letter-spacing:1.2px;padding-bottom:24px}
+.range-heading span:first-child{color:var(--ion)}
+.offer-range ol{list-style:none;margin:0;padding:0}
+.range-item{display:grid;grid-template-columns:24px 1fr;gap:2px 12px;padding:17px 0;border-top:1px solid var(--line);position:relative}
+.range-code{grid-row:span 2;font:10px/1.6 var(--font-mono);color:var(--quiet);padding-top:4px}
+.range-name{font:500 23px/1.25 var(--font-display);letter-spacing:-.4px}
+.range-state{font:10px/1.7 var(--font-mono);color:var(--quiet);margin-top:3px}
+.range-item.is-available{margin:10px -13px 0;padding:18px 13px;border:1px solid #e3b16855;border-radius:7px;background:linear-gradient(110deg,#e3b16812,transparent)}
+.range-item.is-available .range-code,.range-item.is-available .range-state{color:var(--flare)}
+.range-item.is-available .range-state:before{content:'';display:inline-block;width:4px;height:4px;border-radius:50%;background:var(--flare);margin-right:7px;vertical-align:middle}
+.range-caption{margin:23px 0 0;color:var(--quiet);font:10px/1.7 var(--font-mono);letter-spacing:.3px}
+.home-offer #blueprints{padding-top:85px;padding-bottom:85px}
+.home-offer .home-grimoire{border-color:#e3b16848;background:linear-gradient(115deg,rgba(35,32,31,.9),rgba(11,21,33,.94));grid-template-columns:1.25fr .75fr;gap:75px;padding:52px 60px}
+.home-grimoire .blueprint-copy>.eyebrow{display:flex;align-items:center;gap:9px;color:var(--flare);font-size:11px;margin-bottom:22px}
+.home-grimoire .signal{background:var(--flare);box-shadow:none}
+.home-offer .home-grimoire h3{font-size:46px;margin-bottom:20px}
+.home-grimoire .blueprint-copy>p:not(.eyebrow){max-width:43ch}
+.home-grimoire .blueprint-copy .home-grimoire-facts{color:var(--ion);font:12px/1.7 var(--font-mono);margin:24px 0}
+.home-grimoire .blueprint-copy .home-grimoire-price{font-size:13px;margin:16px 0 0;line-height:1.7;color:var(--muted)}
+.home-grimoire .blueprint-copy .blueprint-language{font-size:12px;margin-top:8px}
+.home-grimoire .home-guide-details{font-size:13px;margin-top:20px;color:var(--muted)}
+.home-book-wrap{display:grid;place-items:center;min-width:0;padding:10px 20px}
+/* The same cover design as the existing Grimoire product page. */
+.home-book{position:relative;width:min(100%,260px);aspect-ratio:.77;display:flex;flex-direction:column;padding:27px 25px 22px;border:1px solid #e3b16866;border-radius:4px 14px 14px 4px;background:radial-gradient(ellipse at 90% 10%,#5fc0d61a,transparent 65%),linear-gradient(115deg,#122130,#101923 60%,#0a111b);box-shadow:-7px 4px 0 #15222e,-8px 4px 0 #e3b16859,0 24px 55px #0006;transform:rotate(-5deg);overflow:hidden}
+.home-book:before{content:'';position:absolute;inset:0 auto 0 6px;width:1px;background:linear-gradient(transparent,#e3b16855,transparent)}
+.home-book .book-series{color:var(--ion);font:9px/1.6 var(--font-mono);letter-spacing:.12em}
+.home-book .book-title{position:relative;color:var(--text);font:500 34px/1.1 var(--font-display);letter-spacing:-.045em;margin-top:27px}
+.home-book .book-title>span{position:absolute;top:0;right:0;color:var(--flare);font-size:26px}
+.home-book .book-method{margin-top:13px;color:var(--muted);font:8px/1.8 var(--font-mono);letter-spacing:.09em}
+.home-book .book-orbit{position:relative;width:100%;height:85px;margin:auto 0;display:flex;align-items:center;justify-content:space-evenly}
+.home-book .book-orbit i,.home-book .book-orbit b{position:absolute;width:72%;height:70%;border:1px solid #5fc0d62d;border-radius:50%;transform:rotate(-25deg)}
+.home-book .book-orbit b{transform:rotate(25deg);border-color:#e3b1682d}
+.home-book .book-orbit span{position:relative;display:grid;place-items:center;width:30px;height:30px;color:var(--flare);border:1px solid #e3b16888;background:#111e2a;border-radius:50%;font:10px var(--font-mono)}
+.home-book .book-orbit span:last-child{color:var(--ion);border-color:#5fc0d688}
+.home-book .book-footer{color:var(--quiet);font:8px/1.9 var(--font-mono);letter-spacing:.08em}
+@media(max-width:1100px){.home-offer .offer-hero .hero-grid{gap:45px;grid-template-columns:1.1fr .9fr}.home-offer .offer-hero h1{font-size:52px}.home-offer .home-grimoire{padding:40px;gap:40px}.offer-range{padding-inline:22px}.range-name{font-size:21px}}
+@media(max-width:800px){.home-offer .offer-hero .hero-grid{grid-template-columns:1fr;gap:44px;padding-block:46px;min-height:0}.home-offer .offer-hero .hero-copy{max-width:620px}.home-offer .offer-hero h1{font-size:clamp(40px,7.8vw,58px);margin-bottom:25px}.home-offer .offer-hero .hero-intro{font-size:20px;max-width:42ch}.home-offer .offer-hero .hero-detail{font-size:17px;max-width:44ch}.offer-range{width:100%;max-width:620px}.range-item{grid-template-columns:24px 1fr auto;align-items:center;gap:12px;padding-block:17px}.range-code{grid-row:auto;padding-top:0}.range-state{margin-top:0;font-size:10px}.range-name{font-size:23px}.range-caption{margin-top:20px}.range-heading{padding-bottom:20px}.home-offer #blueprints{padding-block:55px}.home-offer .home-grimoire{grid-template-columns:1fr;padding:34px;gap:32px}.home-offer .home-grimoire h3{font-size:40px}.home-book-wrap{padding:16px 20px 10px}.home-book{max-width:230px}.home-grimoire .blueprint-copy .home-grimoire-price{font-size:14px}.home-grimoire .blueprint-copy .blueprint-language{font-size:13px}.home-grimoire .home-guide-details{font-size:16px}}
+@media(max-width:480px){.home-offer .offer-hero .eyebrow{font-size:12px}.home-offer .offer-hero h1{font-size:42px;line-height:1.1}.home-offer .offer-hero .hero-intro{font-size:19px}.home-offer .offer-hero .hero-detail{font-size:16px}.home-offer .offer-hero .actions .button{font-size:15px;gap:22px;padding-inline:20px}.offer-range{padding:22px 20px 18px}.range-heading{font-size:9px;letter-spacing:1px}.range-item{grid-template-columns:21px 1fr;gap:2px 10px;padding-block:14px}.range-code{grid-row:span 2;align-self:start;padding-top:5px}.range-name{font-size:23px}.range-state{grid-column:2;font-size:11px;margin-top:4px}.range-item.is-available{padding:16px 12px;margin-inline:-12px}.range-caption{font-size:11px}.home-offer .hero-bottom{gap:8px 20px;font-size:10px;letter-spacing:.4px}.home-offer .hero-bottom span:first-child{display:block}.home-offer .hero-bottom>span:nth-child(2){display:none}.home-offer .home-grimoire{padding:28px 22px}.home-offer .home-grimoire .button{font-size:15px;padding-inline:17px;gap:12px}.home-grimoire .blueprint-copy .home-grimoire-facts{font-size:11px}.home-offer .home-grimoire h3{font-size:38px}}
+@media(max-width:360px){.home-offer .offer-hero h1{font-size:36px}.home-offer .offer-hero .hero-grid{padding-top:36px}.home-offer .offer-hero .hero-intro{font-size:18px}.home-offer .offer-hero .hero-detail{font-size:15px}.home-offer .offer-hero .actions .button{font-size:14px;padding-inline:17px;gap:18px}.home-offer .home-grimoire .button{font-size:13px}}
