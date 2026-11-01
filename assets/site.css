@@ -225,3 +225,10 @@ h1 em,h2 em{color:var(--flare)}
 .transmission-eyebrow{font-family:var(--font-mono);font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--ion)}
 .transmission-sign{font-family:var(--font-mono);font-size:12px;color:var(--flare)}
 @media(prefers-reduced-motion:reduce){.transmission{transition:none;transform:none}}
+
+/* Purchase terms stay beside each checkout link, in a compact readable block. */
+.purchase-terms { max-width:66ch; margin:18px 0 24px; text-align:left; }
+.purchase-terms p { margin:0 0 9px !important; color:var(--muted); font-size:13px !important; line-height:1.75 !important; }
+.purchase-terms p:last-child { margin-bottom:0 !important; }
+.purchase-terms a { color:var(--ion); text-decoration:underline; text-underline-offset:3px; }
+.page-legal #donnees-personnelles p + p { margin-top:24px; }

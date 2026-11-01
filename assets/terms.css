@@ -1,0 +1,20 @@
+/* Quiet legal reader: the same type, colours and numbered rhythm as the site. */
+.page-terms main > .hero { padding-bottom:54px; }
+.terms-layout { display:grid; grid-template-columns:220px minmax(0,760px); gap:70px; align-items:start; padding-block:30px 100px; }
+.terms-toc { position:sticky; top:32px; display:grid; gap:4px; padding-top:4px; }
+.terms-toc a { display:flex; gap:14px; padding:10px 0; color:var(--muted); font-size:14px; line-height:1.55; text-decoration:none; }
+.terms-toc a:hover { color:var(--ion); }
+.terms-toc span { flex-shrink:0; white-space:nowrap; color:var(--ion); font:12px/1.8 var(--font-mono); }
+.terms-section { display:grid; grid-template-columns:28px minmax(0,1fr); gap:22px; padding:38px 0; border-top:1px solid var(--line); scroll-margin-top:32px; }
+.terms-section:first-child { padding-top:0; border-top:0; }
+.terms-number { padding-top:8px; font:12px/1.6 var(--font-mono); color:var(--ion); }
+.page-terms .terms-copy h2 { font-size:32px; line-height:1.2; margin:0 0 24px; }
+.terms-copy p { margin:0 0 20px; color:var(--muted); line-height:1.85; }
+.terms-copy :is(p,ul):last-child { margin-bottom:0; }
+.terms-copy strong { color:var(--text); font-weight:500; }
+.terms-copy ul { padding-left:1.2em; margin:0 0 24px; color:var(--muted); }
+.terms-copy li { padding-left:5px; margin:0 0 12px; }
+.terms-copy blockquote { margin:26px 0; padding:6px 0 6px 22px; border-left:2px solid var(--flare); color:var(--text); line-height:1.85; }
+@media(max-width:1000px) { .terms-layout { grid-template-columns:180px minmax(0,1fr); gap:35px; } }
+@media(max-width:800px) { .terms-layout { grid-template-columns:minmax(0,1fr); gap:40px; padding-top:0; } .terms-toc { position:static; grid-template-columns:repeat(2,minmax(0,1fr)); gap:4px 24px; padding-bottom:26px; border-bottom:1px solid var(--line); } }
+@media(max-width:480px) { .terms-section { grid-template-columns:minmax(0,1fr); gap:12px; padding-block:30px; } .terms-number { padding:0; } .page-terms .terms-copy h2 { font-size:29px; } .terms-toc { gap:4px 14px; } .terms-toc a { font-size:13px; gap:9px; } }
