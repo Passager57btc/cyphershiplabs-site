@@ -232,3 +232,18 @@ h1 em,h2 em{color:var(--flare)}
 .purchase-terms p:last-child { margin-bottom:0 !important; }
 .purchase-terms a { color:var(--ion); text-decoration:underline; text-underline-offset:3px; }
 .page-legal #donnees-personnelles p + p { margin-top:24px; }
+
+/* Compact phone hierarchy; desktop and tablet sizes remain unchanged. */
+@media(max-width:430px){
+body{font-size:16px;line-height:1.65}
+h1{font-size:36px;line-height:1.12;margin-bottom:24px}
+h2{font-size:28px;line-height:1.18}
+.section{padding-block:52px}
+.section-intro,.product-description,.product-sector{font-size:16px;line-height:1.65}
+.product-card h3{font-size:24px}
+.button,.text-link,.card-link{font-size:15px}
+.button{min-height:48px}
+.site-navigation{font-size:16px}
+.eyebrow,.product-top .eyebrow{font-size:11px;letter-spacing:1.1px}
+.status{font-size:12px}
+}

@@ -52,3 +52,15 @@
 .home-offer .blueprints-intro .hero-copy>.eyebrow{margin-top:0}
 .home-offer #blueprints-products{scroll-margin-top:35px}
 @media(max-width:800px){.home-offer .blueprints-intro .hero-grid{padding-top:0;padding-bottom:44px}}
+
+/* Final offer overrides keep the two homepage heroes in the same phone scale. */
+@media(max-width:430px){
+.home-offer .offer-hero h2{font-size:28px;line-height:1.18;margin-bottom:22px}
+.home-offer .offer-hero .hero-intro,.home-offer .offer-hero .hero-detail{font-size:16px;line-height:1.65}
+.home-offer .offer-hero .hero-grid{gap:30px;padding-block:36px}
+.home-offer .blueprints-intro .hero-grid{padding-top:0;padding-bottom:36px}
+.home-offer .home-grimoire h3{font-size:24px;line-height:1.18}
+.range-name{font-size:22px}
+.home-offer #blueprints{padding-block:52px}
+.home-grimoire .home-guide-details{font-size:15px}
+}

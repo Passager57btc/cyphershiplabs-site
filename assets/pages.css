@@ -272,3 +272,18 @@
 .page-blueprints .bp-status strong { font-weight:500; }
 .page-blueprints .bp-link { color:var(--ion); text-decoration:underline; text-underline-offset:4px; }
 .page-grimoire .hero .ctas, .page-blueprints .hero .ctas { display:flex; flex-wrap:wrap; gap:12px; }
+
+/* Interior pages use the same compact phone hierarchy as the homepage. */
+@media(max-width:430px){
+:is(.subpage,.legal) main>.hero{padding-block:48px 44px}
+:is(.subpage,.legal) main>section{padding-block:48px}
+:is(.subpage,.legal) h1{font-size:36px;line-height:1.12;margin-bottom:24px}
+:is(.subpage,.legal) h2,.page-products .product-head h2,.page-manifesto .principle h2{font-size:28px;line-height:1.18}
+:is(.subpage,.legal) h3,.page-about .mission-card h3,.page-contact .include-row h3,.page-kit .kit-card h3,.page-kit .kit-callout h3{font-size:24px;line-height:1.2}
+:is(.subpage,.legal) main p,:is(.page-products,.page-agentic) .feature-item .txt,.page-kit ul{font-size:16px;line-height:1.65}
+.page-agentic .step-title{font-size:24px;line-height:1.2}
+.page-kit .field,.page-kit .bp-option label,.page-kit .consent label{font-size:16px}
+.page-kit .step-list li{font-size:22px}
+.page-agentic .crew-teaser-card .crew-name{font-size:22px}
+.page-agentic .crew-teaser-card .crew-desc{font-size:16px}
+}

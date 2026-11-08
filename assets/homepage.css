@@ -203,3 +203,26 @@ h1{font-size:58px;line-height:1.02;margin-bottom:25px;max-width:11ch}
 
 .blueprints-all{margin:32px 0 0}
 .blueprints-all .text-link{color:var(--ion,#5FC0D6);text-decoration:underline;text-underline-offset:4px}
+
+/* Phone scale follows the shared 16px reading size. */
+.studio-services .service-credit{font-size:13px;color:var(--ion);margin-top:10px}
+@media(max-width:430px){
+.hero h1{font-size:36px;line-height:1.12}
+.hero .hero-intro,.hero .hero-detail{font-size:16px;line-height:1.65}
+.hero-grid{padding-block:40px}
+.studio h2,.contact-panel h2{font-size:28px;line-height:1.18}
+.studio-copy>p:not(.eyebrow),.studio-services p,.contact-panel>p:not(.eyebrow),.crew-card p{font-size:16px;line-height:1.65}
+.studio-services h3,.blueprint-copy h3,.blueprint-next h3{font-size:24px;line-height:1.2}
+.studio-services>div{padding-block:20px}
+.studio-services>div:first-child{padding-top:0}
+.studio-services>div:last-child{padding-bottom:0}
+.service-number{top:24px;font-size:11px}
+.studio-services>div:first-child .service-number{top:4px}
+.blueprint-copy>p:not(.eyebrow),.blueprint-next>p:not(.eyebrow),.future-direction-card>p:last-child{font-size:16px;line-height:1.65}
+.future-direction-card h2{font-size:24px;line-height:1.2}
+.future-direction-card .future-direction-status{font-size:12px}
+.crew-card h3{font-size:24px}
+.crew-context{font-size:14px}
+.crew-card .crew-role{font-size:13px!important}
+.studio-services .service-credit{font-size:13px}
+}
