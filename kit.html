@@ -45,6 +45,7 @@
 
 <link rel="stylesheet" href="/assets/site.css?v=20261108-site">
 <link rel="stylesheet" href="/assets/pages.css?v=20261108-site">
+<link rel="stylesheet" href="/assets/crew-kit-offer.css?v=20261110-prerequisites">
 <script src="/assets/site.js" defer></script>
 </head>
 <body class="subpage page-kit">
@@ -59,11 +60,35 @@
   <section class="hero kit-hero">
     <div class="wrap">
       <div class="eyebrow">The Blueprints / Crew Kit</div>
+      <div class="kit-hero-layout">
+        <div class="kit-hero-intro">
       <h1>Stop re-explaining your project to your AI <em>every session.</em></h1>
-      <p class="sub">The Crew Kit is the method we use at CypherShip Labs to work with a small team of AI agents, each with its own role, its own memory and its own rules. Blank templates you copy and name yourself, plus an installation guide, for Claude Code (and ChatGPT / Codex).</p>
+      <p class="sub">Build your own AI crew with roles you personalise, shared project memory and clear working rules. Follow the included guided setup.</p>
+        </div>
+        <div class="kit-offer">
       <p class="kit-status"><strong>Available now · US$59.</strong> One-time purchase · Instant download · EN + FR.</p>
+      <dl class="kit-offer-facts">
+        <div><dt>You receive</dt><dd>role templates, a shared memory structure, working rules and a guided setup. English and French files included.</dd></div>
+        <div><dt>You need</dt><dd>for the main setup, Claude Code installed with active access, Git 2.28 or later, and a terminal.</dd></div>
+        <div><dt>Not included</dt><dd>AI service access, subscriptions or credits; hosting or installation carried out for you.</dd></div>
+      </dl>
       <p class="kit-note">Tested on Linux. macOS and Windows not yet tested.</p>
+      <p class="kit-path-note">Codex: adapted setup. ChatGPT web: reading only. <a class="kit-setup-link" href="#compatibilite">See setup options</a>.</p>
       <p class="ctas"><a href="https://buy.stripe.com/9B6cN76Nk3zV77k6wvabK02" class="button primary">Buy the Crew Kit · US$59 <span aria-hidden="true">↗</span></a></p><div class="purchase-terms"><p>By buying, you accept the <a href="/terms.html">Terms of sale</a> and the licence included in your download.</p><p>I expressly ask for immediate access to the digital content, and I acknowledge that I lose my right of withdrawal.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="compatibilite" aria-labelledby="kit-setup-title">
+    <div class="wrap">
+      <h2 id="kit-setup-title">Choose your setup</h2>
+      <dl class="kit-setup-options">
+        <div><dt>Claude Code — main setup</dt><dd>Install role templates as subagents and connect them to shared project memory.</dd></div>
+        <div><dt>Codex — adapted setup</dt><dd>Codex reads a role file and follows it within the current session. This kit does not install native Codex subagents.</dd></div>
+        <div><dt>ChatGPT web — reading only</dt><dd>Consult memory stored in a private GitHub repository connected to ChatGPT. Updates remain with Claude Code or Codex; this is not an equivalent installation.</dd></div>
+      </dl>
+      <p class="kit-setup-linux">Tested on Linux only. macOS and Windows have not yet been tested.</p>
     </div>
   </section>
 
@@ -113,7 +138,7 @@
           <p>Choose your roles, give them names and prepare a first mission. Then follow the installation steps with your assistant. The written guide remains available.</p>
         </div>
       </div>
-      <p class="kit-note">It’s not a video course, and it’s not a class. It’s a folder of files and a guide to read, which you install in an evening or two.</p>
+      <p class="kit-note">A folder of files and a written guide, rather than a video course. Setup time depends on your tools and pace.</p>
       <div class="kit-callout">
         <h3>Your crew, your names</h3>
         <p><strong>The CypherShip portraits illustrate the roles in the guided setup.</strong> You choose your own names and personalities. Your memory takes shape around your work.</p>
@@ -174,7 +199,7 @@
         <li><strong>Thalie</strong> <span>visual creation</span> Image, identity, interface.</li>
       </ul>
       <div class="kit-text">
-        <p>Everyone reads the same memory at the start of a session and writes down what’s worth keeping at the end. You stay the one who decides.</p>
+        <p>Roles consult shared memory and propose updates. Your main assistant records approved changes, one writer at a time. You stay the one who decides.</p>
         <p>One measurement from our own setup: by restructuring the memory (a short “current state” plus a separate archive), the files read at startup went from 143 KB to 40 KB, about 26,000 fewer tokens per session by our estimate. That is the order of magnitude of our own memory, not a promise for yours: the gain depends on how large your history is.</p>
       </div>
     </div>
@@ -187,7 +212,7 @@
           <h3>Who it’s for</h3>
           <ul>
             <li>You’re independent, a freelancer or a solo founder.</li>
-            <li>You already use Claude Code or ChatGPT every day.</li>
+            <li>You already use Claude Code or Codex with access to files on your computer.</li>
             <li>You lose time recovering context from one session to the next.</li>
             <li>You’re comfortable copying files and following a guide; you don’t need to be a developer.</li>
           </ul>
@@ -195,7 +220,7 @@
         <div class="kit-card">
           <h3>Who it’s not for</h3>
           <ul>
-            <li>If you’ve never opened Claude Code or ChatGPT: use them for a few weeks first, the kit will be more useful afterwards.</li>
+            <li>If you only use ChatGPT web, first get comfortable with Claude Code or Codex and local files.</li>
             <li>If you want a one-click, turnkey tool: this is a method and a set of files, not software.</li>
             <li>If you want agents that run on their own, nonstop, on a server: that’s not what the kit is about.</li>
             <li>If you expect guaranteed results: a well-organized crew helps, but it replaces neither your judgment nor your review.</li>
@@ -240,9 +265,9 @@
         <div class="faq-item"><h3>Is the kit available?</h3><p>Yes. Crew Kit is available for US$59, as a one-time purchase with immediate download, in English and French.</p></div>
         <div class="faq-item"><h3>Are the portraits included in the kit?</h3><p>Yes, as visual examples to help you recognise the roles. You give your own names and personalities to the roles you choose.</p></div>
         <div class="faq-item"><h3>Are these autonomous agents running all the time?</h3><p>No. We work session by session, with a human in the loop, on purpose. Running always-on agents is a separate subject that the kit doesn’t cover.</p></div>
-        <div class="faq-item"><h3>Do I need to know how to code?</h3><p>No, but you need to be comfortable copying files into a folder and following a guide. The guide is written for someone who isn’t a developer. The technical vocabulary (subagents, CLAUDE.md, git) is explained as you go.</p></div>
-        <div class="faq-item"><h3>Which tool does it work with?</h3><p>The main guide is written for Claude Code. It includes adaptations for ChatGPT / Codex. The templates are plain text files, so the principle carries over, but the exact installation depends on the tool.</p></div>
-        <div class="faq-item"><h3>How much does it cost?</h3><p>US$59, as a one-time purchase. There is no Crew Kit subscription.</p></div>
+        <div class="faq-item"><h3>Do I need to know how to code?</h3><p>No. You should be comfortable copying files, opening a terminal and following a guide. The main setup assumes Claude Code is already installed and accessible.</p></div>
+        <div class="faq-item"><h3>Which tool does it work with?</h3><p>The main setup uses Claude Code. Codex follows role files within a session; ChatGPT web can only consult connected GitHub memory. <a class="kit-setup-link" href="#compatibilite">See the setup options above.</a></p></div>
+        <div class="faq-item"><h3>How much does it cost?</h3><p>US$59, as a one-time purchase. There is no Crew Kit subscription. Access to AI services and any associated subscriptions or credits are separate.</p></div>
         <div class="faq-item"><h3>Is it a course?</h3><p>No. It’s a set of templates, a memory structure, rules and a written guide. No course videos, no subscription.</p></div>
         <div class="faq-item"><h3>What guarantees it will work for me?</h3><p>Nothing, and we don’t claim otherwise. It’s the method we actually use, and we’ll tell you precisely what it does and doesn’t do. You’ll judge it on the evidence.</p></div>
         <div class="faq-item"><h3>What do you do with my email address?</h3><p>Your purchase email is used for your receipt. Your download is available after payment. The waitlist for upcoming Blueprints requires a separate sign-up, which you can leave at any time. Details: <a href="/legal.html#donnees-personnelles">privacy policy</a>.</p></div>

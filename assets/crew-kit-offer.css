@@ -1,0 +1,133 @@
+/* Crew Kit purchase prerequisites and setup options only. */
+.page-kit .kit-hero-layout {
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  gap:36px;
+}
+.page-kit .kit-hero-intro,
+.page-kit .kit-offer {
+  min-width:0;
+}
+.page-kit .kit-offer .kit-status {
+  margin:0;
+  padding:0;
+  border:0;
+  border-radius:0;
+  background:none;
+}
+.page-kit .kit-offer-facts {
+  max-width:62ch;
+  margin:26px 0 0;
+  font-size:17px;
+  line-height:1.65;
+}
+.page-kit .kit-offer-facts > div,
+.page-kit .kit-setup-options > div {
+  display:grid;
+  grid-template-columns:160px minmax(0,1fr);
+  gap:24px;
+  padding-block:18px;
+  border-top:1px solid var(--line);
+}
+.page-kit .kit-offer-facts > div:last-child,
+.page-kit .kit-setup-options > div:last-child {
+  border-bottom:1px solid var(--line);
+}
+.page-kit .kit-offer-facts dt,
+.page-kit .kit-setup-options dt {
+  color:var(--text);
+  font-weight:500;
+}
+.page-kit .kit-offer-facts dt {
+  font-family:var(--font-mono);
+  font-size:12px;
+  line-height:1.7;
+  letter-spacing:.025em;
+  padding-top:3px;
+}
+.page-kit .kit-offer-facts dd,
+.page-kit .kit-setup-options dd {
+  margin:0;
+  color:var(--muted);
+}
+.page-kit .kit-hero .kit-note {
+  margin-top:22px;
+}
+.page-kit .kit-hero .kit-note,
+.page-kit .kit-hero .kit-path-note {
+  font-size:16px;
+  line-height:1.6;
+}
+.page-kit .kit-hero .kit-path-note {
+  max-width:62ch;
+  margin:10px 0 0;
+}
+.page-kit .kit-setup-link {
+  display:inline-block;
+  max-width:100%;
+  color:var(--ion);
+  text-decoration:underline;
+  text-decoration-thickness:1px;
+  text-underline-offset:4px;
+}
+.page-kit .kit-setup-link:hover,
+.page-kit .kit-setup-link:focus-visible {
+  color:var(--flare);
+}
+.page-kit #compatibilite h2 {
+  margin:0 0 32px;
+}
+.page-kit .kit-setup-options {
+  max-width:940px;
+  margin:0;
+  font-size:18px;
+  line-height:1.65;
+}
+.page-kit .kit-setup-options > div {
+  grid-template-columns:240px minmax(0,1fr);
+  gap:36px;
+  padding-block:24px;
+}
+.page-kit .kit-setup-linux {
+  max-width:68ch;
+  margin:22px 0 0;
+}
+@media (min-width:1101px) {
+  .page-kit .kit-hero-layout {
+    grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);
+    gap:64px;
+    align-items:start;
+  }
+  .page-kit .kit-offer-facts > div {
+    grid-template-columns:120px minmax(0,1fr);
+    gap:20px;
+    padding-block:16px;
+  }
+  .page-kit .kit-offer-facts {
+    line-height:1.6;
+  }
+}
+@media (max-width:700px) {
+  .page-kit .kit-offer-facts,
+  .page-kit .kit-setup-options {
+    font-size:16px;
+  }
+  .page-kit .kit-setup-options > div {
+    grid-template-columns:minmax(0,1fr);
+    gap:7px;
+    padding-block:18px;
+  }
+  .page-kit #compatibilite h2 {
+    margin-bottom:24px;
+  }
+}
+@media (max-width:600px) {
+  .page-kit .kit-offer-facts > div {
+    grid-template-columns:minmax(0,1fr);
+    gap:7px;
+    padding-block:18px;
+  }
+  .page-kit .kit-offer-facts dt {
+    padding-top:0;
+  }
+}
