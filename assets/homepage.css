@@ -226,3 +226,19 @@ h1{font-size:58px;line-height:1.02;margin-bottom:25px;max-width:11ch}
 .crew-card .crew-role{font-size:13px!important}
 .studio-services .service-credit{font-size:13px}
 }
+
+/* Homepage section headings: the intro shares the title row, never the eyebrow row. */
+.home-offer .section-heading{grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-areas:"eyebrow ." "title intro";column-gap:80px;row-gap:20px;align-items:center}
+.home-offer .section-heading>.eyebrow{grid-area:eyebrow;margin:0}
+.home-offer .section-heading>h2{grid-area:title;align-self:center;margin:0}
+.home-offer .section-heading>.section-intro{grid-area:intro;align-self:center;width:100%;max-width:42ch;margin:0}
+/* Text links remain identifiable without decorative diagonal arrows. */
+.home-offer .text-link,.home-offer .blueprint-next-link,.home-offer .card-link{text-decoration:underline;text-decoration-thickness:1px;text-decoration-color:rgba(95,192,214,.42);text-underline-offset:5px;text-decoration-skip-ink:auto;transition:color .18s,text-decoration-color .18s}
+.home-offer .text-link:is(:hover,:focus-visible),.home-offer .blueprint-next-link:is(:hover,:focus-visible),
+.home-offer .product-card:is(:hover,:focus-visible) .card-link{color:var(--ion);text-decoration-color:currentColor}
+.home-offer .button.primary:focus-visible{background:#87D3E3}
+.home-offer .button.secondary:focus-visible,.home-offer .nav-contact:focus-visible{background:rgba(95,192,214,.1);border-color:var(--ion)}
+@media(max-width:1100px){.home-offer .section-heading{column-gap:40px}}
+@media(max-width:800px){
+.home-offer .section-heading{grid-template-columns:minmax(0,1fr);grid-template-areas:"eyebrow" "title" "intro";row-gap:24px;column-gap:0}
+}
