@@ -63,17 +63,17 @@
       <div class="kit-hero-layout">
         <div class="kit-hero-intro">
       <h1>Stop re-explaining your project to your AI <em>every session.</em></h1>
-      <p class="sub">Build your own AI crew with roles you personalise, shared project memory and clear working rules. Follow the included guided setup.</p>
+      <p class="sub">Build your own crew with roles you personalise, shared project memory and clear working rules. Follow the included guided setup with Claude Code or Codex.</p>
         </div>
         <div class="kit-offer">
       <p class="kit-status"><strong>Available now · US$59.</strong> One-time purchase · Instant download · EN + FR.</p>
       <dl class="kit-offer-facts">
         <div><dt>You receive</dt><dd>role templates, a shared memory structure, working rules and a guided setup. English and French files included.</dd></div>
-        <div><dt>You need</dt><dd>for the main setup, Claude Code installed with active access, Git 2.28 or later, and a terminal.</dd></div>
+        <div><dt>You need</dt><dd>Claude Code or Codex installed with active access, Git 2.28 or later, and a terminal.</dd></div>
         <div><dt>Not included</dt><dd>AI service access, subscriptions or credits; hosting or installation carried out for you.</dd></div>
       </dl>
-      <p class="kit-note">Tested on Linux. macOS and Windows not yet tested.</p>
-      <p class="kit-path-note">Codex: adapted setup. ChatGPT web: reading only. <a class="kit-setup-link" href="#compatibilite">See setup options</a>.</p>
+      <p class="kit-note">Setup scripts checked on Linux and Windows. Live agent workflows tested on Linux.</p>
+      <p class="kit-path-note">Claude Code and Codex, with shared project memory. <a class="kit-setup-link" href="#compatibilite">See setup options</a>.</p>
       <p class="ctas"><a href="https://buy.stripe.com/9B6cN76Nk3zV77k6wvabK02" class="button primary">Buy the Crew Kit · US$59 <span aria-hidden="true">↗</span></a></p><div class="purchase-terms"><p>By buying, you accept the <a href="/terms.html">Terms of sale</a> and the licence included in your download.</p><p>I expressly ask for immediate access to the digital content, and I acknowledge that I lose my right of withdrawal.</p></div>
         </div>
       </div>
@@ -84,11 +84,11 @@
     <div class="wrap">
       <h2 id="kit-setup-title">Choose your setup</h2>
       <dl class="kit-setup-options">
-        <div><dt>Claude Code — main setup</dt><dd>Install role templates as subagents and connect them to shared project memory.</dd></div>
-        <div><dt>Codex — adapted setup</dt><dd>Codex reads a role file and follows it within the current session. This kit does not install native Codex subagents.</dd></div>
-        <div><dt>ChatGPT web — reading only</dt><dd>Consult memory stored in a private GitHub repository connected to ChatGPT. Updates remain with Claude Code or Codex; this is not an equivalent installation.</dd></div>
+        <div><dt>Claude Code</dt><dd>Use native subagents in Claude Code to build and review work with shared project memory.</dd></div>
+        <div><dt>Codex</dt><dd>Use native subagents in Codex to build and review work with shared project memory.</dd></div>
       </dl>
-      <p class="kit-setup-linux">Tested on Linux only. macOS and Windows have not yet been tested.</p>
+      <p class="kit-setup-note">Both tools use the same working rules, shared memory and written handoffs. The builder and reviewer work separately. Your main assistant records memory updates after you approve the exact text.</p>
+      <p class="kit-setup-linux">Follow the guide to prepare and activate your chosen roles. Each tool keeps its own role format.</p>
     </div>
   </section>
 
@@ -96,7 +96,7 @@
     <div class="wrap kit-text">
       <div class="eyebrow">The problem</div>
       <h2>The problem, from your side</h2>
-      <p>You already use Claude Code or ChatGPT. It works well… for one session. The next day, the AI no longer knows where you left off, you paste the context back in, two conversations contradict each other, and you can’t tell which one is right.</p>
+      <p>You already use Claude Code or Codex. It works well… for one session. The next day, the AI no longer knows where you left off, you paste the context back in, two conversations contradict each other, and you can’t tell which one is right.</p>
       <p>It isn’t a model problem. It’s an organization problem: nobody decided who does what, where memory lives, or who is allowed to change what.</p>
       <p>We had this problem. We solved it by building our own crew of agents, with its own rules, over months of real work. The kit is that structure, cleaned up so you can pick it up without reinventing it.</p>
     </div>
@@ -114,7 +114,7 @@
         <div class="kit-card">
           <div class="num">01</div>
           <h3>Blank agent templates</h3>
-          <p>Files to copy into your project, one per role: architect, developer, reviewer, documentation writer, researcher, and a few more. Technically, they are Claude Code subagent definitions. Each template states the mission, what the agent may do, what it must not do, and how it reports back.</p>
+          <p>Files to copy into your project, one per role: architect, developer, reviewer, documentation writer, researcher, and a few more. Use them with Claude Code or Codex, following the guide. Each template states the mission, what the agent may do, what it must not do, and how it reports back.</p>
         </div>
         <div class="kit-card">
           <div class="num">02</div>
@@ -159,10 +159,10 @@
           <h3>The kit IS</h3>
           <p>A dependable way of working for a small team of named agents, with:</p>
           <ul>
-            <li>roles defined as Claude Code subagents, and a <code>CLAUDE.md</code> file that sets the project’s rules;</li>
+            <li>role templates, working rules and memory pointers for Claude Code or Codex;</li>
             <li>persistent memory in plain text files, versioned with git, read at the start of every session;</li>
             <li>review loops (one agent reads another’s work, including through a pull request before merging);</li>
-            <li>written handoffs between models (Claude, GPT/Codex);</li>
+            <li>written handoffs between Claude Code and Codex;</li>
             <li>the one-writer-at-a-time rule on memory;</li>
             <li>a verification standard: nothing is declared “done” until it has been checked.</li>
           </ul>
@@ -220,7 +220,7 @@
         <div class="kit-card">
           <h3>Who it’s not for</h3>
           <ul>
-            <li>If you only use ChatGPT web, first get comfortable with Claude Code or Codex and local files.</li>
+            <li>If you have not used Claude Code or Codex with local files, get comfortable with those tools first.</li>
             <li>If you want a one-click, turnkey tool: this is a method and a set of files, not software.</li>
             <li>If you want agents that run on their own, nonstop, on a server: that’s not what the kit is about.</li>
             <li>If you expect guaranteed results: a well-organized crew helps, but it replaces neither your judgment nor your review.</li>
@@ -261,12 +261,12 @@
         </div>
       </div>
       <div class="faq">
-        <div class="faq-item"><h3>Which operating systems have been tested?</h3><p>Tested on Linux. macOS and Windows not yet tested.</p></div>
+        <div class="faq-item"><h3>Which operating systems have been tested?</h3><p>Copying and setup scripts have been checked on Linux and Windows, with PowerShell 5.1 and 7. Building, reviewing and handoffs between Claude Code and Codex have been tested on Linux. Those live workflows remain to be checked on Windows. macOS has not been tested.</p></div>
         <div class="faq-item"><h3>Is the kit available?</h3><p>Yes. Crew Kit is available for US$59, as a one-time purchase with immediate download, in English and French.</p></div>
         <div class="faq-item"><h3>Are the portraits included in the kit?</h3><p>Yes, as visual examples to help you recognise the roles. You give your own names and personalities to the roles you choose.</p></div>
         <div class="faq-item"><h3>Are these autonomous agents running all the time?</h3><p>No. We work session by session, with a human in the loop, on purpose. Running always-on agents is a separate subject that the kit doesn’t cover.</p></div>
-        <div class="faq-item"><h3>Do I need to know how to code?</h3><p>No. You should be comfortable copying files, opening a terminal and following a guide. The main setup assumes Claude Code is already installed and accessible.</p></div>
-        <div class="faq-item"><h3>Which tool does it work with?</h3><p>The main setup uses Claude Code. Codex follows role files within a session; ChatGPT web can only consult connected GitHub memory. <a class="kit-setup-link" href="#compatibilite">See the setup options above.</a></p></div>
+        <div class="faq-item"><h3>Do I need to know how to code?</h3><p>No. You should be comfortable copying files, opening a terminal and following a guide. Setup assumes Claude Code or Codex is already installed and accessible.</p></div>
+        <div class="faq-item"><h3>Which tool does it work with?</h3><p>Claude Code and Codex use role templates and shared project memory. The guide explains how to set up memory with each tool and pass work between them. <a class="kit-setup-link" href="#compatibilite">See the setup options above.</a></p></div>
         <div class="faq-item"><h3>How much does it cost?</h3><p>US$59, as a one-time purchase. There is no Crew Kit subscription. Access to AI services and any associated subscriptions or credits are separate.</p></div>
         <div class="faq-item"><h3>Is it a course?</h3><p>No. It’s a set of templates, a memory structure, rules and a written guide. No course videos, no subscription.</p></div>
         <div class="faq-item"><h3>What guarantees it will work for me?</h3><p>Nothing, and we don’t claim otherwise. It’s the method we actually use, and we’ll tell you precisely what it does and doesn’t do. You’ll judge it on the evidence.</p></div>

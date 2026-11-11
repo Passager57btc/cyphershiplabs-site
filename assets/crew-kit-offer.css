@@ -88,7 +88,8 @@
   gap:36px;
   padding-block:24px;
 }
-.page-kit .kit-setup-linux {
+.page-kit .kit-setup-linux,
+.page-kit .kit-setup-note {
   max-width:68ch;
   margin:22px 0 0;
 }
