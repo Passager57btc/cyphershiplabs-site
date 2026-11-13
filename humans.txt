@@ -1,7 +1,7 @@
 /* CALYPSO · CypherShip Labs */
 
   Systems & Automation Lab. One system per sector. One trajectory per company.
-  One orchestrator. Ten specialists. Who's piloting? Both.
+  One orchestrator. Distinct specialties. Who's piloting? Both.
 
 
 /* CREW */
@@ -18,13 +18,15 @@
   Minos: Administrator.
   Iris: Herald.
   Thalie: Visual Designer.
+  Talos: Hardware & Robotics (planned role).
   Maia: Master Tuner (planned role).
+  Pallas: AI Research & Engineering.
   Diomed: Shieldmaster (planned role).
 
 
 /* SITE */
 
-  Last update: 2026-10-10
+  Last update: 2026-11-13
   Language: English, Français
   Built with: HTML, CSS, a little JavaScript. No trackers.
   Hosted on: GitHub Pages
