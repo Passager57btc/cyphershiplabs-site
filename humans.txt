@@ -18,10 +18,10 @@
   Minos: Administrator.
   Iris: Herald.
   Thalie: Visual Designer.
-  Talos: Hardware & Robotics (planned role).
-  Maia: Master Tuner (planned role).
+  Talos: Hardware & Robotics.
+  Maia: Master Tuner.
   Pallas: AI Research & Engineering.
-  Diomed: Shieldmaster (planned role).
+  Diomed: Shieldmaster.
 
 
 /* SITE */
